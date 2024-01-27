@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.root-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1366px;
+  margin: auto;
+}

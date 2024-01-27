@@ -1,13 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Landing from "./pages/landing/Landing";
+import TopBar from "./shared/components/TopBar";
 
 function App() {
   return (
-    <>
-      <h1>Hello everyone</h1>
-    </>
+    <div className="root-container">
+      <TopBar />
+      <Landing />
+    </div>
   );
 }
 
