@@ -4,7 +4,7 @@ import TopBar from "./shared/components/TopBar";
 
 function App() {
   return (
-    <div className="root-container">
+    <div className="root-container root-background">
       <TopBar />
       <Landing />
     </div>

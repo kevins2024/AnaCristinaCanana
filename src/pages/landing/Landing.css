@@ -1,0 +1,15 @@
+.landing-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.landing-content-center-bar {
+  height: 33%;
+  background-color: #00000033;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

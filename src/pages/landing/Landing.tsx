@@ -1,5 +1,14 @@
+import "./Landing.css";
+
 function Landing() {
-  return <div style={{ height: "100%" }}>you've landed!</div>;
+  return (
+    <div className="landing-content" style={{ color: "white" }}>
+      <div className="landing-content-center-bar">
+        <div>BIG NAME</div>
+        <div>little words</div>
+      </div>
+    </div>
+  );
 }
 
 export default Landing;
