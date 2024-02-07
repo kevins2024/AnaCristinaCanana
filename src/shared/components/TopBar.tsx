@@ -1,5 +1,5 @@
 import "./TopBar.css";
-import acLogo from "../../assets/logo-ac-black.png";
+import acLogo from "../../assets/logo-ac.png";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function TopBar() {
@@ -33,11 +33,7 @@ function TopBar() {
 
   return (
     <div className="top-bar">
-      <img
-        onClick={goHome}
-        src={acLogo}
-        style={{ width: "42px", height: "50px", marginLeft: "20px" }}
-      />
+      <img onClick={goHome} src={acLogo} style={{ marginLeft: "20px" }} />
       <div className="top-bar-button-box">
         {buttons.map((button) => (
           <NavLink

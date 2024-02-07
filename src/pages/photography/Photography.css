@@ -1,9 +1,4 @@
 .photography-layout {
-  height: 100%;
-  width: 100%;
-  background-color: whitesmoke;
-  display: flex;
-  font-family: "Yu Gothic";
   align-items: center;
   justify-content: center;
 }

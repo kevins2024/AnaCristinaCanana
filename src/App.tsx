@@ -3,6 +3,7 @@ import "./App.css";
 import Landing from "./pages/landing/Landing";
 import TopBar from "./shared/components/TopBar";
 import Photography from "./pages/photography/Photography";
+import Logos from "./pages/logos/Logos";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TopBar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/logos" element={<Logos />} />
         <Route path="/photography" element={<Photography />} />
       </Routes>
     </div>

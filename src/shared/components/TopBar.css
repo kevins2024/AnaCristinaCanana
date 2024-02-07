@@ -15,7 +15,7 @@
 
 .top-bar-button {
   /* can change this to target Link */
-  font: normal 15px "Yu Gothic";
+  font-size: 15px;
   color: #bcbcbc;
   letter-spacing: 0.75px;
   margin-right: 20px;
