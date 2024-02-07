@@ -29,12 +29,12 @@
 
 .landing-content-profession-left-box {
   padding-right: 16px;
-  font: normal 9pt "Yu Gothic";
+  font-size: 9pt;
   text-decoration: line-through;
   color: #949494;
 }
 
 .landing-content-profession-center-box {
-  font: normal 16pt "Yu Gothic";
+  font-size: 16pt;
   color: #b9b9b9;
 }
