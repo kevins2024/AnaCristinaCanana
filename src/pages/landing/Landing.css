@@ -30,10 +30,10 @@
   padding-right: 16px;
   font-size: 9pt;
   text-decoration: line-through;
-  color: #949494;
+  color: var(--text-color-minordisable);
 }
 
 .landing-content-profession-center-box {
   font-size: 16pt;
-  color: #b9b9b9;
+  color: var(--text-color-minorhighlight);
 }
