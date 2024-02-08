@@ -1,5 +1,5 @@
 import "./TopBar.css";
-import acLogo from "../../assets/logo-ac.png";
+import acLogo from "../assets/logo-ac.png";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function TopBar() {
