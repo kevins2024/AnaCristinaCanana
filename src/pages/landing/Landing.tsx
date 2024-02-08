@@ -3,6 +3,7 @@ import "./Landing.css";
 function Landing() {
   return (
     <div className="landing-content" style={{ color: "white" }}>
+      <div style={{ height: "40%" }}></div>
       <div className="landing-content-center-bar">
         <div className="landing-content-name">ANA CRISTINA CANANA</div>
         <div
@@ -25,6 +26,7 @@ function Landing() {
           <div style={{ flex: 1, minWidth: "30%" }}></div>
         </div>
       </div>
+      <div style={{ height: "60%" }}></div>
     </div>
   );
 }

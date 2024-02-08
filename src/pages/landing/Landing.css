@@ -1,6 +1,5 @@
 .landing-content {
   height: 100%;
-  max-height: 822px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
