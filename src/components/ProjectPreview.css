@@ -1,0 +1,14 @@
+.project-preview-layout {
+  width: 25vw;
+  margin-top: 25%;
+  text-align: center;
+}
+
+.project-preview-image {
+  width: 75%;
+  filter: drop-shadow(15px 15px 15px #545454);
+}
+
+.project-preview-text {
+  width: 100%;
+}
