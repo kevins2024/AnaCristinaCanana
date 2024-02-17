@@ -1,9 +1,9 @@
-import ProjectPreview from "../../components/ProjectPreview";
+import ProjectPreview from "./ProjectPreview";
 import "./Projects.css";
-import taqueriaImage from "../../assets/projects/taqueria-express/taqueria-preview.png";
-import meetImage from "../../assets/projects/meet/meet-preview.png";
-import orbImage from "../../assets/projects/orb/orb-preview.png";
-import { ProjectNames, ProjectText } from "../../assets/projects/ProjectText";
+import taqueriaImage from "./assets/taqueria-preview.png";
+import meetImage from "./assets/meet-preview.png";
+import orbImage from "./assets/orb-preview.png";
+import { ProjectNames, ProjectText } from "./ProjectText";
 
 function Projects() {
   return (

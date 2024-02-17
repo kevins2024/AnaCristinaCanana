@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import "./App.css";
 import Landing from "./pages/landing/Landing";
-import TopBar from "./components/TopBar";
+import TopBar from "./TopBar";
 import Photography from "./pages/photography/Photography";
 import Logos from "./pages/logos/Logos";
 import Projects from "./pages/projects/Projects";
