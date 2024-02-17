@@ -1,0 +1,29 @@
+.project-preview-layout {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-preview-top-spacing {
+  flex-grow: 3;
+}
+
+.project-preview-image {
+  width: 90%;
+  filter: drop-shadow(15px 15px 15px #545454);
+}
+
+.project-preview-middle-spacing {
+  flex-grow: 1;
+}
+
+.project-preview-text {
+  width: 90%;
+  text-align: center;
+}
+
+.project-preview-bottom-spacing {
+  flex-grow: 9;
+}
