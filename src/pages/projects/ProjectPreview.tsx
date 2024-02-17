@@ -22,4 +22,6 @@ function ProjectPreview(props: any) {
   );
 }
 
+// todo make a type for props
+
 export default ProjectPreview;

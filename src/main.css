@@ -4,6 +4,13 @@ body {
   font-family: "Yu Gothic";
 }
 
+h1 {
+  margin: 0;
+  font-family: "Yu Gothic";
+  font-size: 26pt;
+  letter-spacing: 1.5px;
+}
+
 .root-container {
   display: flex;
   flex-direction: column;
