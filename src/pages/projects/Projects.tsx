@@ -11,9 +11,18 @@ function Projects() {
       <ProjectPreview
         image={taqueriaImage}
         text={ProjectText[ProjectNames.TAQUERIA]}
+        url="/projects/taqueria"
       />
-      <ProjectPreview image={meetImage} text={ProjectText[ProjectNames.MEET]} />
-      <ProjectPreview image={orbImage} text={ProjectText[ProjectNames.ORB]} />
+      <ProjectPreview
+        image={meetImage}
+        text={ProjectText[ProjectNames.MEET]}
+        url="/projects/meet"
+      />
+      <ProjectPreview
+        image={orbImage}
+        text={ProjectText[ProjectNames.ORB]}
+        url="/projects/myorb"
+      />
     </div>
   );
 }
