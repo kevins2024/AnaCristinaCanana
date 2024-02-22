@@ -11,6 +11,7 @@ import logoPic from "../../logos/assets/logo1.png";
 function Taqueria() {
   return (
     <div className="content-panel taqueria-layout">
+      {/* Move the ComponentWrapper inside the heading and subheading place */}
       <ComponentWrapper
         direction="column"
         isCentered
@@ -26,14 +27,19 @@ function Taqueria() {
         }
       />
       <ProjectContent
+        title="Project Overview"
         content={[
           {
             type: ProjectContentType.IMAGE,
             data: logoPic,
           },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "this is a string of content. I hope it is super good.",
+          },
         ]}
-        title="Project Overview"
       />
+      <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
     </div>
   );
 }
