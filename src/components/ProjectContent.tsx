@@ -1,4 +1,4 @@
-import "./ProjectContent.css";
+import "./ProjectContent.css"; // todo import this somewhere else so it isn't imported many times
 
 export default function ProjectContent(props: ProjectContentProps) {
   const { content, title } = props;

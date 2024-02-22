@@ -7,6 +7,7 @@ import SubHeading from "../../../components/SubHeading";
 import "./Taqueria.css";
 
 import logoPic from "../../logos/assets/logo1.png";
+import ProjectContentLayoutOneTwo from "../../../components/ProjectContentLayouts";
 
 function Taqueria() {
   return (
@@ -38,6 +39,17 @@ function Taqueria() {
             data: "this is a string of content. I hope it is super good.",
           },
         ]}
+      />
+      <ProjectContentLayoutOneTwo
+        left={<>this is the left content</>}
+        right={
+          <>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <div>internal child one</div>
+              <div>internal child two</div>
+            </div>
+          </>
+        }
       />
       <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
     </div>
