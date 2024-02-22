@@ -1,8 +1,10 @@
 :root {
-  --background-color-light: "white";
+  --background-color-light: #ffffff;
 
-  --text-color-primary: #bcbcbc;
-  --text-color-minorhighlight: #b9b9b9;
-  --text-color-minordisable: #949494;
+  --text-color-light-primary: #bcbcbc;
+  --text-color-light-minorhighlight: #b9b9b9;
+  --text-color-light-minordisable: #949494;
+
+  /* todo might not use */
   --text-color-heading: #222f2a;
 }

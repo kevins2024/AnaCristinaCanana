@@ -1,11 +1,8 @@
 .taqueria-layout {
-  background-color: aquamarine;
   flex-direction: column;
   align-items: center;
 }
 
-.inner-component {
-  background-color: cornflowerblue;
-  border: 1px solid black;
-  flex-grow: 1;
+.taqueria-heading {
+  margin-top: 7vh;
 }

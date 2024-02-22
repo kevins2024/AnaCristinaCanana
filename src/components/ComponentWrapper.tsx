@@ -1,28 +1,20 @@
+import { CSSProperties } from "react";
+
 function ComponentWrapper(props: ComponentWrapperProps) {
-  // TypeScript is being difficult about style names/types so using
-  // flex-direction instead of flexDirection is good here
-  var styles: StyleType = {
+  var styles = {
     width: "80%",
     display: "flex",
-    "flex-direction": props.direction ? props.direction : "row",
-  };
+    flexDirection: props.direction ? props.direction : "row",
+  } as CSSProperties; // workaround/fix detailed here https://github.com/cssinjs/jss/issues/1344
   if (props.isCentered) {
     if (props.direction && props.direction == "column") {
-      styles["align-items"] = "center";
+      styles.alignItems = "center";
     } else {
-      styles["justify-content"] = "center";
+      styles.justifyContent = "center";
     }
   }
   return <div style={styles}>{props.child}</div>;
 }
-
-type StyleType = {
-  width: string;
-  display: string;
-  "flex-direction": string;
-  "align-items"?: string;
-  "justify-content"?: string;
-};
 
 type ComponentWrapperProps = {
   direction?: string;
