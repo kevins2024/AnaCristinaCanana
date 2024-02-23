@@ -12,6 +12,7 @@
 
 .project-content-image {
   align-self: center;
+  max-width: 85%;
 }
 
 .project-content-paragraph {

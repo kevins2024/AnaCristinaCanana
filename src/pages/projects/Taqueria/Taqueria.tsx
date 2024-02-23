@@ -5,13 +5,14 @@ import ProjectContent, {
 } from "../../../components/ProjectContent";
 import SubHeading from "../../../components/SubHeading";
 import "./Taqueria.css";
-
-import logoPic from "../../logos/assets/logo1.png";
 import {
   ProjectContentLayoutOneOne,
   ProjectContentLayoutOneTwo,
   ProjectContentLayoutThreeColumns,
 } from "../../../components/ProjectContentLayouts";
+
+import image02WebHomePage from "./assets/02_web_home_page.png";
+import placeholder01 from "./assets/placeholder01.png";
 
 function Taqueria() {
   return (
@@ -23,28 +24,90 @@ function Taqueria() {
         child={
           <>
             <Heading className="taqueria-heading">
-              The component with longer text that needs to wrap
+              Taqueria Express App and Responsive Web Design
             </Heading>
             <SubHeading>
-              UX Design | Mobile Interactive Prototype | 2024
+              UX Design | Mobile Interactive Prototype | 2022
             </SubHeading>
           </>
         }
       />
       <ProjectContent
-        title="Project Overview"
+        title="My Story with Taqueria Express"
         content={[
           {
-            type: ProjectContentType.IMAGE,
-            data: logoPic,
+            type: ProjectContentType.PARAGRAPH,
+            data: "The Taqueria Express responsive web and mobile app design was my first project as a student in Google's UX course. Taqueria Express is one of my favorite authentic Mexican food spots in Charleston, South Carolina. Their popularity has been growing with the years and, as a result, the demand for amazing tacos as well.",
           },
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "this is a string of content. I hope it is super good.",
+            data: "At lunchtime the wait could go up to an hour some days. Since I was a frequent customer it was very easy for me to socialize with other in the same long wait and hear (and express) the same complaint. These became the potential users of my app design. When I had to choose my first project for the course my immediate thought was 'I never want to wait so long for Mexican food again, I can fix this!' That's how the project was born.",
+          },
+          {
+            type: ProjectContentType.IMAGE, // todo add other hovering image here
+            data: image02WebHomePage,
           },
         ]}
       />
-      <ProjectContentLayoutOneTwo
+      <ProjectContent
+        title="Project Overview"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "Taqueria Express responsive web and mobile app is a service that primarily allows users to order food from the Taqueria Express food truck. This food ordering service has been designed to help people order easily online to alleviate the wait times encountered when ordering in person. The secondary goal was to have a modern UI with friendly visual guidelines.",
+          },
+        ]}
+      />
+      {/* todo make a component */}
+      <br />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "40%",
+        }}
+      >
+        <div style={{ display: "flex", paddingBottom: "6px" }}>
+          <div style={{ fontWeight: "bold", width: "40%" }}>
+            Project Duration:
+          </div>
+          <div style={{ width: "60%" }}>February 5th to August 3rd 2022</div>
+        </div>
+        <div style={{ display: "flex", paddingBottom: "6px" }}>
+          <div style={{ fontWeight: "bold", width: "40%" }}>
+            Responsibilities:
+          </div>
+          <div style={{ width: "60%" }}>
+            Plan, design, execute design, user test, and iterate through
+            wireframe, low fidelity, high fidelity, until finally the completed
+            design
+          </div>
+        </div>
+        <div style={{ display: "flex", paddingBottom: "6px" }}>
+          <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
+          <div style={{ width: "60%" }}>UX designer, student</div>
+        </div>
+        <div style={{ display: "flex", paddingBottom: "6px" }}>
+          <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
+          <div style={{ width: "60%" }}>Figma, Adobe Xd</div>
+        </div>
+      </div>
+      <ProjectContent
+        title="Primary Research"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "Starting off, I asked myself initial questions. What is the problem we want to solve? What is the process and emotions that our users experience at the time of ordering food? What are the common user behaviors? What are their frustrations?",
+          },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "After interviewing ten active customers from Taqueria Express, pain points became more clear. Some of them were identified as able to fix and others as able to improve.",
+          },
+        ]}
+      />
+      <br />
+      <img src={placeholder01} style={{ maxWidth: "50%" }} />
+      {/* <ProjectContentLayoutOneTwo
         left={<>this is the left content</>}
         right={
           <>
@@ -77,7 +140,7 @@ function Taqueria() {
             </div>
           </>
         }
-      />
+      /> */}
       <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
     </div>
   );
