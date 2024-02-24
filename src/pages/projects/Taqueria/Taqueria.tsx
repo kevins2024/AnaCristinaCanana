@@ -13,6 +13,24 @@ import {
 
 import image02WebHomePage from "./assets/02_web_home_page.png";
 import placeholder01 from "./assets/placeholder01.png";
+import persona01 from "./assets/personaPlaceholder01.png";
+import persona02 from "./assets/personaPlaceholder02.png";
+import storyboard01 from "./assets/05_storyboard_1.jpeg";
+import storyboard02 from "./assets/06_storyboard_2.jpeg";
+import userJourney from "./assets/07_user_journey_map.jpg";
+import wireframe01 from "./assets/paper_wireframe01.jpg";
+import wireframe02 from "./assets/paper_wireframe02.jpg";
+import wireframe03 from "./assets/paper_wireframe03.jpg";
+import wireframe04 from "./assets/paper_wireframe04.jpg";
+import wireframe05 from "./assets/paper_wireframe05.jpg";
+import wireframe06 from "./assets/paper_wireframe06.jpg";
+import wireframe07 from "./assets/paper_wireframe07.jpg";
+import wireframe08 from "./assets/paper_wireframe08.jpg";
+import lowFidelityProto from "./assets/lowFidelityPrototype.jpg";
+import mobileHomePage from "./assets/16homeMobile.jpg";
+import arrowRightAlt from "./assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
+import arrowLeftAlt from "./assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
+import menuWithReturnShown from "./assets/17_menu.webp";
 
 function Taqueria() {
   return (
@@ -106,7 +124,157 @@ function Taqueria() {
         ]}
       />
       <br />
+      {/* todo make this a component */}
       <img src={placeholder01} style={{ maxWidth: "50%" }} />
+      <ProjectContent
+        title="Personas"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The following are two of the personas that were created.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: persona01,
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: persona02,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Storyboard"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The photos below show the storyboard of a potential user and how their usage of the app could look.",
+          },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The first photo shows the user before and after using the product and their experience at a high level. The focus is on their needs, context, and why the product would be useful for them. They are represented as someone working from an office or home office who does not have time to drive to the taco truck, wait in line, eat, and return to their workstation.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: storyboard01,
+          },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The second storyboard focuses more close-up on the product, showing steps that would all this same user to accomplish their goals.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: storyboard02,
+          },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "Based on these sequences I was able to create a journey map that would be the foundation for starting to ideate paper wireframes.",
+          },
+        ]}
+      />
+      <ProjectContent
+        title="User Journey Map"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The user journey map was created with the objective of showing what steps would be needed for users to accomplish their goal. The maps shows the steps clearly, shows that only a few steps are needed for each task, and the navigation through the website or app.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: userJourney,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Paper Wireframe"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "After having a clear idea of the journey map, I started to sketch and experiment with paper designs. I used techniques like Crazy Eights and Ideate. The picture below represent the final proposition.",
+          },
+        ]}
+      />
+      <br />
+      {/* todo this may become a grid component */}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "20% 20% 20% 20%",
+          width: "80%",
+          gap: "1%",
+          marginLeft: "12%", // not sure why this is 12%
+        }}
+      >
+        <img style={{ maxWidth: "100%" }} src={wireframe01} />
+        <img style={{ maxWidth: "100%" }} src={wireframe02} />
+        <img style={{ maxWidth: "100%" }} src={wireframe03} />
+        <img style={{ maxWidth: "100%" }} src={wireframe04} />
+        <img style={{ maxWidth: "100%" }} src={wireframe05} />
+        <img style={{ maxWidth: "100%" }} src={wireframe06} />
+        <img style={{ maxWidth: "100%" }} src={wireframe07} />
+        <img style={{ maxWidth: "100%" }} src={wireframe08} />
+      </div>
+      <ProjectContent
+        title="Low Fidelity Prototype"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "Once the paper wireframes were established, I started the low fidelity protoype.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: lowFidelityProto,
+          },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "Below is an example of the home page for the mobile app. With this layout we seek to solve one of the pain points: it takes too long to place an order. The menu is placed right in the center and users also have quick access to favorite meals and previous orders giving multiple ways to quickly place an order.",
+          },
+        ]}
+      />
+      {/* todo this is a cool layout, need to make a component for it with more absolute arrow positioning */}
+      <br />
+      <div style={{ display: "flex", width: "80%" }}>
+        <div style={{ width: "22%" }}>
+          Profile and cart buttons are always easy to locate
+        </div>
+        <div style={{ width: "5%", paddingTop: "2%" }}>
+          <img src={arrowRightAlt} style={{ width: "100%" }} />
+        </div>
+        <img
+          style={{ backgroundColor: "red", maxWidth: "44%" }}
+          src={mobileHomePage}
+        />
+        <div style={{ width: "5%", alignSelf: "end", paddingBottom: "8%" }}>
+          <img src={arrowLeftAlt} style={{ width: "100%" }} />
+        </div>
+        <div style={{ width: "22%", alignSelf: "end", paddingBottom: "5%" }}>
+          Home page also displays the previous orders and allows customer to add
+          it to the cart with a single click or tap.
+        </div>
+      </div>
+      <br />
+      <div style={{ width: "80%" }} className="project-content-paragraph">
+        After the customer selects a meal from the menu, all ingredients are in
+        one section. They can select addons and quantities with separate
+        sections for drinks, desserts, and special instructions necessary for
+        their meal.
+      </div>
+      <br />
+      <div style={{ display: "flex", width: "80%" }}>
+        <div style={{ minWidth: "22%" }}></div>
+        <div style={{ minWidth: "5%" }}></div>
+        <img
+          style={{ backgroundColor: "red", width: "44%" }}
+          src={menuWithReturnShown}
+        />
+        <div style={{ minWidth: "5%", alignSelf: "end", paddingBottom: "2%" }}>
+          <img src={arrowLeftAlt} style={{ width: "100%" }} />
+        </div>
+        <div style={{ minWidth: "22%", alignSelf: "end", paddingBottom: "2%" }}>
+          The user is also able to exit this page and go back to the menu if
+          they want to completely change the meal being ordered.
+        </div>
+      </div>
       {/* <ProjectContentLayoutOneTwo
         left={<>this is the left content</>}
         right={
