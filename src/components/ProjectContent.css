@@ -1,0 +1,19 @@
+.project-content-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 80%;
+}
+
+.project-content-title {
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.project-content-image {
+  align-self: center;
+  max-width: 85%;
+}
+
+/* .project-content-paragraph {
+} */
