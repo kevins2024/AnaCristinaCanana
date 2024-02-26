@@ -8,3 +8,6 @@ Ana Cristina is a designer and designed this site. Imagine being a designer but 
 
 - [ ] CSS variables
 - [ ] Change layout to be responsive
+- [ ] Many todos scattered around the code in in comments
+- [ ] Make a click-to-enlarge image feature
+- [ ] CSS change pointer on hover over clickable images (link, enlarge)

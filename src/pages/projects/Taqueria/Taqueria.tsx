@@ -5,12 +5,13 @@ import ProjectContent, {
 } from "../../../components/ProjectContent";
 import SubHeading from "../../../components/SubHeading";
 import "./Taqueria.css";
-import {
-  ProjectContentLayoutOneOne,
-  ProjectContentLayoutOneTwo,
-  ProjectContentLayoutThreeColumns,
-} from "../../../components/ProjectContentLayouts";
+// import {
+//   ProjectContentLayoutOneOne,
+//   ProjectContentLayoutOneTwo,
+//   ProjectContentLayoutThreeColumns,
+// } from "../../../components/ProjectContentLayouts";
 
+// todo move these to a file or something
 import image02WebHomePage from "./assets/02_web_home_page.png";
 import placeholder01 from "./assets/placeholder01.png";
 import persona01 from "./assets/personaPlaceholder01.png";
@@ -32,6 +33,22 @@ import arrowRightAlt from "./assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.s
 import arrowLeftAlt from "./assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import menuWithReturnShown from "./assets/17_menu.webp";
 import usabilityPlaceholder from "./assets/placeholderUsabilityStudy.png";
+import mockup1 from "./assets/mockup1.jpg";
+import mockup2 from "./assets/mockup2.jpg";
+import mockup3 from "./assets/mockup3.jpg";
+import mockup4 from "./assets/mockup4.jpg";
+import highFidelityPrototype from "./assets/highFidelityPrototype.jpg";
+import accessibilityConsiderations from "./assets/accessibilityConsiderations.png";
+import webWireFrame from "./assets/webWireFrame.jpg";
+import webDigitalWireframe from "./assets/digitalWireframe.png";
+import webLowFidelityPrototype from "./assets/webLowFidelityPrototype.jpg";
+import responsiveMockups from "./assets/responsiveMockups.png";
+import usabilityStudyPains from "./assets/usabilityStudyPains.png";
+import webHomeChanges from "./assets/webHomeChanges.png";
+import webHomeChanges2 from "./assets/webHomeChanges2.png";
+import hifiWeb from "./assets/hifiWeb.png";
+import hifiTablet from "./assets/hifiTablet.png";
+import hifiMobile from "./assets/hifiMobile.png";
 
 function Taqueria() {
   return (
@@ -284,6 +301,162 @@ function Taqueria() {
             data: "I conducted two moderated usability studies to determine if users can complete core tasks without being bilingual (the prototype was English only at this point) but with the help of visual cues instead of text. Further, I wanted to determine the overall difficulty of navigating the app. All participants have full-time remote jobs and they usually order food at lunchtime. None were bilingual but all love hispanic food. Half the study participants were hispanic and half were caucasian.",
           },
           { type: ProjectContentType.IMAGE, data: usabilityPlaceholder },
+        ]}
+      />
+      <br />
+      <div className="project-content-title">Mockups</div>
+      <br />
+      <div // copy paste from above grid
+        style={{
+          display: "grid",
+          gridTemplateColumns: "20% 20% 20% 20%",
+          width: "80%",
+          gap: "1%",
+          marginLeft: "12%",
+        }}
+      >
+        <img style={{ maxWidth: "100%" }} src={mockup1} />
+        <img style={{ maxWidth: "100%" }} src={mockup2} />
+        <img style={{ maxWidth: "100%" }} src={mockup3} />
+        <img style={{ maxWidth: "100%" }} src={mockup4} />
+      </div>
+      <ProjectContent
+        title="High-fidelity Prototype"
+        content={[
+          {
+            type: ProjectContentType.IMAGE,
+            data: highFidelityPrototype,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Accessibility Considerations"
+        content={[
+          {
+            type: ProjectContentType.IMAGE,
+            data: accessibilityConsiderations,
+          },
+        ]}
+      />
+      <br />
+      <SubHeading>Responsive Web Design</SubHeading>
+      <ProjectContent
+        title="Refining the Design"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "For the responsive web design I took as a base the primary research study and the personas I created for the mobile app. The design was also made consistent with the look and feel of the mobile app, taking basic elements and concepts into consideration.",
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Paper Wireframe"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The layout of the webpage is divided in three sections. The first section was created to give the user a warm visual welcome. Lots of colors and vibrant, fresh vegetables are on display with the logo in the middle. On the top right I placed easy access to the menu link, language selection, and hamburger menu which contains less-frequenly used buttons. Scrolling down will also take the user to the core of the webpage: the menu. The third section is designed for the consumers engagement with Taqueria Express social media, contact information, and location.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: webWireFrame,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Digital Wireframe"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "Three variations are shown below. The first is web (assuming standard display size), next is a tablet view built around 12.9 inch iPad, and the third shown is for mobile built on a Google Pixel 6.",
+          },
+          { type: ProjectContentType.IMAGE, data: webDigitalWireframe },
+        ]}
+      />
+      <ProjectContent
+        title="Low-fidelity Prototype"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "The user flow for this site was inspired by the order of the process in a line at a buffet. First, you are welcomed to the location before deciding which overall food area interests you. Next you can select individual ingredients, in this case it is proteins, vegetables, tortillas, etc. Finally, addons, drinks, and desserts are available. In the case of the app flow, you end with the option to review and change your order before finalizing it.",
+          },
+          { type: ProjectContentType.IMAGE, data: webLowFidelityPrototype },
+        ]}
+      />
+      <ProjectContent
+        title="Mockups"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "As shown in the prototypes, we can see a comparison of how the site would look on three different size devices.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: responsiveMockups,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Usability Study"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "After finishing the low-fidelity prototype I executed the first usability study. There were five participants, all local to Charleston and clients of Taqueria Express. The study was unmoderated and lasted about 20-30 minutes.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: usabilityStudyPains,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Usability Study"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "With the results of the usability study some new findings prompted design changes. A search function was added with a button at the top right as well as quick access to the bag.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: webHomeChanges,
+          },
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "For better accessibility a logo was added to the center of the top bar which navigates back to the site homepage.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: webHomeChanges2,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="High-fidelity Prototype"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "High-fidelity prototypes for web and tablet layouts were finalized and updates were made to the mobile prototype for consistency.",
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: hifiWeb,
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: hifiTablet,
+          },
+          {
+            type: ProjectContentType.IMAGE,
+            data: hifiMobile,
+          },
+        ]}
+      />
+      <ProjectContent
+        title="Takeaways"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "I feel extremely happy with the design because every single view has been created while thinking about inclusivity. In the entire process of creating, planning, and designing I was aware of accessibility considerations and I believe that will make a huge difference in the future of UX.",
+          },
         ]}
       />
       {/* <ProjectContentLayoutOneTwo
