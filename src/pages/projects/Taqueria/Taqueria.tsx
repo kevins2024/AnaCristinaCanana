@@ -31,6 +31,7 @@ import mobileHomePage from "./assets/16homeMobile.jpg";
 import arrowRightAlt from "./assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import arrowLeftAlt from "./assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import menuWithReturnShown from "./assets/17_menu.webp";
+import usabilityPlaceholder from "./assets/placeholderUsabilityStudy.png";
 
 function Taqueria() {
   return (
@@ -275,6 +276,16 @@ function Taqueria() {
           they want to completely change the meal being ordered.
         </div>
       </div>
+      <ProjectContent
+        title="Usability Study"
+        content={[
+          {
+            type: ProjectContentType.PARAGRAPH,
+            data: "I conducted two moderated usability studies to determine if users can complete core tasks without being bilingual (the prototype was English only at this point) but with the help of visual cues instead of text. Further, I wanted to determine the overall difficulty of navigating the app. All participants have full-time remote jobs and they usually order food at lunchtime. None were bilingual but all love hispanic food. Half the study participants were hispanic and half were caucasian.",
+          },
+          { type: ProjectContentType.IMAGE, data: usabilityPlaceholder },
+        ]}
+      />
       {/* <ProjectContentLayoutOneTwo
         left={<>this is the left content</>}
         right={
