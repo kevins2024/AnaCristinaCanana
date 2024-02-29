@@ -6,6 +6,7 @@ import Photography from "./pages/photography/Photography";
 import Logos from "./pages/logos/Logos";
 import Projects from "./pages/projects/Projects";
 import Taqueria from "./pages/projects/Taqueria/Taqueria";
+import Meet from "./pages/projects/Meet/Meet";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/photography" element={<Photography />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/taqueria" element={<Taqueria />} />
-        <Route path="/projects/meet" element={<Logos />} />
+        <Route path="/projects/meet" element={<Meet />} />
         <Route path="/projects/myorb" element={<Logos />} />
       </Routes>
     </div>

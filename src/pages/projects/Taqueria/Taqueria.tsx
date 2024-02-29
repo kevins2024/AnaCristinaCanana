@@ -4,7 +4,6 @@ import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
 import SubHeading from "../../../components/SubHeading";
-import "./Taqueria.css";
 // import {
 //   ProjectContentLayoutOneOne,
 //   ProjectContentLayoutOneTwo,
@@ -52,19 +51,17 @@ import hifiMobile from "./assets/hifiMobile.png";
 
 function Taqueria() {
   return (
-    <div className="content-panel taqueria-layout">
+    <div className="content-panel project-content-layout ">
       {/* Move the ComponentWrapper inside the heading and subheading place */}
       <ComponentWrapper
         direction="column"
         isCentered
         child={
           <>
-            <Heading className="taqueria-heading">
+            <Heading className="project-content-heading">
               Taqueria Express App and Responsive Web Design
             </Heading>
-            <SubHeading>
-              UX Design | Mobile Interactive Prototype | 2022
-            </SubHeading>
+            <SubHeading>UX Design | Interactive Prototypes | 2022</SubHeading>
           </>
         }
       />
