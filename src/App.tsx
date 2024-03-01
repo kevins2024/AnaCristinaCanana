@@ -8,6 +8,7 @@ import Projects from "./pages/projects/Projects";
 import Taqueria from "./pages/projects/Taqueria/Taqueria";
 import Meet from "./pages/projects/Meet/Meet";
 import Orb from "./pages/projects/Orb/Orb";
+import Characters from "./pages/characters/Characters";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects/taqueria" element={<Taqueria />} />
         <Route path="/projects/meet" element={<Meet />} />
         <Route path="/projects/myorb" element={<Orb />} />
+        <Route path="/characters" element={<Characters />} />
       </Routes>
     </div>
   );
