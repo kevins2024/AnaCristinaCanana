@@ -7,16 +7,16 @@
 }
 
 .project-preview-top-spacing {
-  flex-grow: 3;
+  margin-top: 13vh;
 }
 
 .project-preview-image {
-  width: 90%;
+  width: 70%;
   filter: drop-shadow(15px 15px 15px #545454);
 }
 
 .project-preview-middle-spacing {
-  flex-grow: 1;
+  margin-top: 4vh;
 }
 
 .project-preview-text {

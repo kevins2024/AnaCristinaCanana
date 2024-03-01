@@ -8,7 +8,6 @@ import { ProjectNames, ProjectText } from "./ProjectText";
 function Projects() {
   return (
     <div className="projects-content content-panel">
-      {/* todo need these to all appear at the same vertical level */}
       <ProjectPreview
         image={taqueriaImage}
         text={ProjectText[ProjectNames.TAQUERIA]}

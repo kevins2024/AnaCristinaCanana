@@ -24,9 +24,9 @@ function ProjectContentLayoutThreeColumns(props: ThreeColProps) {
     <>
       <br />
       <div style={outerFlexStyle}>
-        <div style={{ width: "33%" }}>{props.left}</div>
-        <div style={{ width: "33%" }}>{props.center}</div>
-        <div style={{ width: "33%" }}>{props.right}</div>
+        <div style={{ width: "31%" }}>{props.left}</div>
+        <div style={{ width: "31%" }}>{props.center}</div>
+        <div style={{ width: "31%" }}>{props.right}</div>
       </div>
     </>
   );
@@ -38,12 +38,8 @@ function ProjectContentLayoutOneOne(props: LeftRightProps) {
     <>
       <br />
       <div style={{ ...outerFlexStyle, justifyContent: "space-around" }}>
-        <div style={{ width: "40%", backgroundColor: "bisque" }}>
-          {props.left}
-        </div>
-        <div style={{ width: "40%", backgroundColor: "thistle" }}>
-          {props.right}
-        </div>
+        <div style={{ width: "40%" }}>{props.left}</div>
+        <div style={{ width: "40%" }}>{props.right}</div>
       </div>
     </>
   );
@@ -70,13 +66,6 @@ interface ThreeColProps extends LeftRightProps {
 //   ONE_ONE_ONE,
 //   ONE_ONE,
 // }
-
-/* need:
-x 1-2
-x 1-1-1
-1-1
-grid 4 to 8 items?
-*/
 
 // todo another idea, have all my project components accept a styles prop
 // and potentially a function that can wrap a component with conditional

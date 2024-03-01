@@ -4,11 +4,6 @@ import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
 import SubHeading from "../../../components/SubHeading";
-// import {
-//   ProjectContentLayoutOneOne,
-//   ProjectContentLayoutOneTwo,
-//   ProjectContentLayoutThreeColumns,
-// } from "../../../components/ProjectContentLayouts";
 
 // todo move these to a file or something
 import image02WebHomePage from "./assets/02_web_home_page.png";
@@ -456,40 +451,7 @@ function Taqueria() {
           },
         ]}
       />
-      {/* <ProjectContentLayoutOneTwo
-        left={<>this is the left content</>}
-        right={
-          <>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div>internal child one</div>
-              <div>internal child two</div>
-            </div>
-          </>
-        }
-      />
-      <ProjectContentLayoutThreeColumns
-        left={<>this is the left content</>}
-        center={<>this is center content asdf asdf qwerty</>}
-        right={
-          <>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div>internal child one</div>
-              <div>internal child two</div>
-            </div>
-          </>
-        }
-      />
-      <ProjectContentLayoutOneOne
-        left={<>this is the left content 1-1</>}
-        right={
-          <>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <div>internal child one-one</div>
-              <div>internal child two</div>
-            </div>
-          </>
-        }
-      /> */}
+
       <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
     </div>
   );
