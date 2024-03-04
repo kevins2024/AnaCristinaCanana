@@ -9,6 +9,7 @@ import Taqueria from "./pages/projects/Taqueria/Taqueria";
 import Meet from "./pages/projects/Meet/Meet";
 import Orb from "./pages/projects/Orb/Orb";
 import Characters from "./pages/characters/Characters";
+import About from "./pages/about/About";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <TopBar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
         <Route path="/logos" element={<Logos />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/projects" element={<Projects />} />

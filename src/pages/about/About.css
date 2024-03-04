@@ -1,0 +1,61 @@
+.about-layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.about-left {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 35%;
+  height: 90%;
+  background-image: url(./assets/20230908_142451.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-right {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 50%;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -1%;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+.about-container div {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0 6% 0 6%;
+}
+
+.about-hello {
+  font-size: 5.8vh;
+  background-color: #eeeeee66;
+}
+.about-hola {
+  font-size: 5.15vh;
+  color: white;
+  background-color: #000000bb;
+}
+.about-ola {
+  font-size: 4.5vh;
+  background-color: #88888866;
+}
+.resume-link {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
