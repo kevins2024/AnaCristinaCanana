@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   background-color: white;
+  overflow: hidden;
 }
 
 .about-left {
@@ -11,9 +12,10 @@
   left: 5%;
   width: 35%;
   height: 90%;
-  background-image: url(./assets/20230908_142451.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+}
+
+.about-me-image {
+  width: 100%;
 }
 
 .about-right {
@@ -21,7 +23,9 @@
   top: 25%;
   left: 45%;
   width: 50%;
+  height: 50%;
   text-align: center;
+  overflow: auto;
 }
 
 .about-container {
@@ -41,21 +45,24 @@
 }
 
 .about-hello {
-  font-size: 5.8vh;
+  font-size: min(5.8vh, 5.8vw);
   background-color: #eeeeee66;
 }
 .about-hola {
-  font-size: 5.15vh;
+  font-size: min(5.15vh, 5.15vw);
   color: white;
   background-color: #000000bb;
 }
 .about-ola {
-  font-size: 4.5vh;
+  font-size: min(4.5vh, 4.5vw);
   background-color: #88888866;
 }
+
 .resume-link {
   position: absolute;
-  bottom: 1%;
+  bottom: 5px;
   left: 50%;
+  width: 100%;
+  text-align: center;
   transform: translateX(-50%);
 }
