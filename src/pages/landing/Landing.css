@@ -1,8 +1,10 @@
 .landing-content {
-  height: 100%;
+  height: calc(100% - 88px);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 88px;
+  z-index: 1;
 }
 
 .landing-content-center-bar {

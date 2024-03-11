@@ -1,7 +1,8 @@
 .about-layout {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  top: 88px;
+  width: 100%;
+  min-height: calc(100% - 88px);
   background-color: white;
   overflow: hidden;
 }

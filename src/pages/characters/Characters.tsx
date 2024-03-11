@@ -1,3 +1,4 @@
+import "./Characters.css";
 import image1 from "./assets/All characters-2.jpg";
 import image2 from "./assets/Character's section 2.png";
 import image3 from "./assets/Character's section 3.png";
@@ -5,7 +6,7 @@ import image4 from "./assets/Character's section 4.png";
 
 function Characters() {
   return (
-    <div className="content-panel project-content-layout ">
+    <div className="content-panel characters-content-layout">
       <img src={image1} style={{ width: "80%" }} />
       <br />
       <div style={{ textAlign: "center" }} className="project-content-parent">
@@ -29,6 +30,7 @@ function Characters() {
         </div>
       </div>
       <br />
+      <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
     </div>
   );
 }

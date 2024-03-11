@@ -7,7 +7,7 @@
 }
 
 .project-preview-top-spacing {
-  margin-top: 13vh;
+  height: 13vh;
 }
 
 .project-preview-image {
@@ -16,7 +16,7 @@
 }
 
 .project-preview-middle-spacing {
-  margin-top: 4vh;
+  height: 4vh;
 }
 
 .project-preview-text {
