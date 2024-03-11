@@ -1,0 +1,68 @@
+.about-layout {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+.about-left {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 35%;
+  height: 90%;
+}
+
+.about-me-image {
+  width: 100%;
+}
+
+.about-right {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  overflow: auto;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -1%;
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+.about-container div {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0 6% 0 6%;
+}
+
+.about-hello {
+  font-size: min(5.8vh, 5.8vw);
+  background-color: #eeeeee66;
+}
+.about-hola {
+  font-size: min(5.15vh, 5.15vw);
+  color: white;
+  background-color: #000000bb;
+}
+.about-ola {
+  font-size: min(4.5vh, 4.5vw);
+  background-color: #88888866;
+}
+
+.resume-link {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+}
