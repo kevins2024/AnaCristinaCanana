@@ -135,7 +135,7 @@ function Taqueria() {
       />
       <br />
       {/* todo make this a component */}
-      <img src={placeholder01} style={{ maxWidth: "50%" }} />
+      <img src={placeholder01} className="project-content-image" />
       <ProjectContent
         title="Personas"
         content={[

@@ -1,5 +1,5 @@
 .project-preview-layout {
-  width: 25vw;
+  width: min(40vh, 25vw);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .project-preview-text {
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 
