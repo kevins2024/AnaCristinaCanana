@@ -1,0 +1,5 @@
+.characters-content-layout {
+  padding-bottom: 40vh;
+  flex-direction: column;
+  align-items: center;
+}

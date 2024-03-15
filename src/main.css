@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  background-color: var(--background-color-dark);
+  background-color: greenyellow;
   font-family: "Yu Gothic";
+  overflow: hidden;
 }
 
 h1 {
@@ -22,9 +23,9 @@ h2 {
   margin: auto;
 }
 
-.root-background {
+/* .root-background {
   background-image: url("./assets/background-main.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-}
+} */

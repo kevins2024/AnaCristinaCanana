@@ -12,7 +12,8 @@
 
 .project-content-image {
   align-self: center;
-  max-width: 85%;
+  max-width: 70%;
+  max-height: calc(80vh - 88px);
 }
 
 /* .project-content-paragraph {
