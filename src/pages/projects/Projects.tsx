@@ -1,4 +1,4 @@
-import ProjectPreview from "./ProjectPreview";
+// import ProjectPreview from "./ProjectPreview";
 import "./Projects.css";
 import taqueriaImage from "./assets/taqueria-preview.png";
 import meetImage from "./assets/meet-preview.png";

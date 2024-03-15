@@ -5,10 +5,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command }) => {
   const config = { base: "/", plugins: [react()] };
 
-  // This is counter-intuitive to me, but it is correct
-  if (command !== "serve") {
-    config.base = "/AnaCristinaCanana";
-  }
+  // This is counter-intuitive to me, but it is correct for the github pages URL. does not work with custom domain
+  // if (command !== "serve") {
+  //   config.base = "/AnaCristinaCanana";
+  // }
 
   return config;
 });
