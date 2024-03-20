@@ -7,7 +7,7 @@ import image4 from "./assets/Character's section 4.png";
 function Characters() {
   return (
     <div className="content-panel characters-content-layout">
-      <img src={image1} style={{ width: "80%" }} />
+      <img src={image1} style={{ width: "var(--content-width-full)" }} />
       <br />
       <div style={{ textAlign: "center" }} className="project-content-parent">
         {

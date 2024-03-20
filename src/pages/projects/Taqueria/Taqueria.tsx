@@ -173,7 +173,7 @@ function Taqueria() {
         style={{
           display: "grid",
           gridTemplateColumns: "20% 20% 20% 20%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "1%",
           marginLeft: "12%", // not sure why this is 12%
         }}
@@ -206,7 +206,9 @@ function Taqueria() {
       />
       {/* todo this is a cool layout, need to make a component for it with more absolute arrow positioning */}
       <br />
-      <div style={{ display: "flex", width: "80%" }}>
+      <div
+        style={{ display: "flex", width: "var(--content-width-full-medium)" }}
+      >
         <div style={{ width: "22%" }}>
           Profile and cart buttons are always easy to locate
         </div>
@@ -226,14 +228,19 @@ function Taqueria() {
         </div>
       </div>
       <br />
-      <div style={{ width: "80%" }} className="project-content-paragraph">
+      <div
+        style={{ width: "var(--content-width-full-medium)" }}
+        className="project-content-paragraph"
+      >
         After the customer selects a meal from the menu, all ingredients are in
         one section. They can select addons and quantities with separate
         sections for drinks, desserts, and special instructions necessary for
         their meal.
       </div>
       <br />
-      <div style={{ display: "flex", width: "80%" }}>
+      <div
+        style={{ display: "flex", width: "var(--content-width-full-medium)" }}
+      >
         <div style={{ minWidth: "22%" }}></div>
         <div style={{ minWidth: "5%" }}></div>
         <img
@@ -265,7 +272,7 @@ function Taqueria() {
         style={{
           display: "grid",
           gridTemplateColumns: "20% 20% 20% 20%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "1%",
           marginLeft: "12%",
         }}
