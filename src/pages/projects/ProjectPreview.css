@@ -7,12 +7,12 @@
 }
 
 .project-preview-top-spacing {
-  height: 13vh;
+  height: 20vh;
 }
 
 .project-preview-image {
   width: 70%;
-  filter: drop-shadow(15px 15px 15px #545454);
+  filter: drop-shadow(1vh 1vh 1vh #7b7b7b);
 }
 
 .project-preview-middle-spacing {

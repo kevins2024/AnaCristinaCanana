@@ -5,44 +5,7 @@ import ProjectContent, {
 } from "../../../components/ProjectContent";
 import SubHeading from "../../../components/SubHeading";
 
-// todo move these to a file or something
-import image02WebHomePage from "./assets/02_web_home_page.png";
-import placeholder01 from "./assets/placeholder01.png";
-import persona01 from "./assets/personaPlaceholder01.png";
-import persona02 from "./assets/personaPlaceholder02.png";
-import storyboard01 from "./assets/05_storyboard_1.jpeg";
-import storyboard02 from "./assets/06_storyboard_2.jpeg";
-import userJourney from "./assets/07_user_journey_map.jpg";
-import wireframe01 from "./assets/paper_wireframe01.jpg";
-import wireframe02 from "./assets/paper_wireframe02.jpg";
-import wireframe03 from "./assets/paper_wireframe03.jpg";
-import wireframe04 from "./assets/paper_wireframe04.jpg";
-import wireframe05 from "./assets/paper_wireframe05.jpg";
-import wireframe06 from "./assets/paper_wireframe06.jpg";
-import wireframe07 from "./assets/paper_wireframe07.jpg";
-import wireframe08 from "./assets/paper_wireframe08.jpg";
-import lowFidelityProto from "./assets/lowFidelityPrototype.jpg";
-import mobileHomePage from "./assets/16homeMobile.jpg";
-import arrowRightAlt from "./assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
-import arrowLeftAlt from "./assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
-import menuWithReturnShown from "./assets/17_menu.webp";
-import usabilityPlaceholder from "./assets/placeholderUsabilityStudy.png";
-import mockup1 from "./assets/mockup1.jpg";
-import mockup2 from "./assets/mockup2.jpg";
-import mockup3 from "./assets/mockup3.jpg";
-import mockup4 from "./assets/mockup4.jpg";
-import highFidelityPrototype from "./assets/highFidelityPrototype.jpg";
-import accessibilityConsiderations from "./assets/accessibilityConsiderations.png";
-import webWireFrame from "./assets/webWireFrame.jpg";
-import webDigitalWireframe from "./assets/digitalWireframe.png";
-import webLowFidelityPrototype from "./assets/webLowFidelityPrototype.jpg";
-import responsiveMockups from "./assets/responsiveMockups.png";
-import usabilityStudyPains from "./assets/usabilityStudyPains.png";
-import webHomeChanges from "./assets/webHomeChanges.png";
-import webHomeChanges2 from "./assets/webHomeChanges2.png";
-import hifiWeb from "./assets/hifiWeb.png";
-import hifiTablet from "./assets/hifiTablet.png";
-import hifiMobile from "./assets/hifiMobile.png";
+import images from "./assets";
 
 function Taqueria() {
   return (
@@ -73,7 +36,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE, // todo add other hovering image here
-            data: image02WebHomePage,
+            data: images.image02WebHomePage,
           },
         ]}
       />
@@ -135,7 +98,7 @@ function Taqueria() {
       />
       <br />
       {/* todo make this a component */}
-      <img src={placeholder01} className="project-content-image" />
+      <img src={images.placeholder01} className="project-content-image" />
       <ProjectContent
         title="Personas"
         content={[
@@ -145,11 +108,11 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: persona01,
+            data: images.persona01,
           },
           {
             type: ProjectContentType.IMAGE,
-            data: persona02,
+            data: images.persona02,
           },
         ]}
       />
@@ -166,7 +129,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: storyboard01,
+            data: images.storyboard01,
           },
           {
             type: ProjectContentType.PARAGRAPH,
@@ -174,7 +137,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: storyboard02,
+            data: images.storyboard02,
           },
           {
             type: ProjectContentType.PARAGRAPH,
@@ -191,7 +154,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: userJourney,
+            data: images.userJourney,
           },
         ]}
       />
@@ -215,14 +178,14 @@ function Taqueria() {
           marginLeft: "12%", // not sure why this is 12%
         }}
       >
-        <img style={{ maxWidth: "100%" }} src={wireframe01} />
-        <img style={{ maxWidth: "100%" }} src={wireframe02} />
-        <img style={{ maxWidth: "100%" }} src={wireframe03} />
-        <img style={{ maxWidth: "100%" }} src={wireframe04} />
-        <img style={{ maxWidth: "100%" }} src={wireframe05} />
-        <img style={{ maxWidth: "100%" }} src={wireframe06} />
-        <img style={{ maxWidth: "100%" }} src={wireframe07} />
-        <img style={{ maxWidth: "100%" }} src={wireframe08} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe01} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe02} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe03} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe04} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe05} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe06} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe07} />
+        <img style={{ maxWidth: "100%" }} src={images.wireframe08} />
       </div>
       <ProjectContent
         title="Low Fidelity Prototype"
@@ -233,7 +196,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: lowFidelityProto,
+            data: images.lowFidelityProto,
           },
           {
             type: ProjectContentType.PARAGRAPH,
@@ -248,14 +211,14 @@ function Taqueria() {
           Profile and cart buttons are always easy to locate
         </div>
         <div style={{ width: "5%", paddingTop: "2%" }}>
-          <img src={arrowRightAlt} style={{ width: "100%" }} />
+          <img src={images.arrowRightAlt} style={{ width: "100%" }} />
         </div>
         <img
           style={{ backgroundColor: "red", maxWidth: "44%" }}
-          src={mobileHomePage}
+          src={images.mobileHomePage}
         />
         <div style={{ width: "5%", alignSelf: "end", paddingBottom: "8%" }}>
-          <img src={arrowLeftAlt} style={{ width: "100%" }} />
+          <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
         </div>
         <div style={{ width: "22%", alignSelf: "end", paddingBottom: "5%" }}>
           Home page also displays the previous orders and allows customer to add
@@ -275,10 +238,10 @@ function Taqueria() {
         <div style={{ minWidth: "5%" }}></div>
         <img
           style={{ backgroundColor: "red", width: "44%" }}
-          src={menuWithReturnShown}
+          src={images.menuWithReturnShown}
         />
         <div style={{ minWidth: "5%", alignSelf: "end", paddingBottom: "2%" }}>
-          <img src={arrowLeftAlt} style={{ width: "100%" }} />
+          <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
         </div>
         <div style={{ minWidth: "22%", alignSelf: "end", paddingBottom: "2%" }}>
           The user is also able to exit this page and go back to the menu if
@@ -292,7 +255,7 @@ function Taqueria() {
             type: ProjectContentType.PARAGRAPH,
             data: "I conducted two moderated usability studies to determine if users can complete core tasks without being bilingual (the prototype was English only at this point) but with the help of visual cues instead of text. Further, I wanted to determine the overall difficulty of navigating the app. All participants have full-time remote jobs and they usually order food at lunchtime. None were bilingual but all love hispanic food. Half the study participants were hispanic and half were caucasian.",
           },
-          { type: ProjectContentType.IMAGE, data: usabilityPlaceholder },
+          { type: ProjectContentType.IMAGE, data: images.usabilityPlaceholder },
         ]}
       />
       <br />
@@ -307,17 +270,17 @@ function Taqueria() {
           marginLeft: "12%",
         }}
       >
-        <img style={{ maxWidth: "100%" }} src={mockup1} />
-        <img style={{ maxWidth: "100%" }} src={mockup2} />
-        <img style={{ maxWidth: "100%" }} src={mockup3} />
-        <img style={{ maxWidth: "100%" }} src={mockup4} />
+        <img style={{ maxWidth: "100%" }} src={images.mockup1} />
+        <img style={{ maxWidth: "100%" }} src={images.mockup2} />
+        <img style={{ maxWidth: "100%" }} src={images.mockup3} />
+        <img style={{ maxWidth: "100%" }} src={images.mockup4} />
       </div>
       <ProjectContent
         title="High-fidelity Prototype"
         content={[
           {
             type: ProjectContentType.IMAGE,
-            data: highFidelityPrototype,
+            data: images.highFidelityPrototype,
           },
         ]}
       />
@@ -326,7 +289,7 @@ function Taqueria() {
         content={[
           {
             type: ProjectContentType.IMAGE,
-            data: accessibilityConsiderations,
+            data: images.accessibilityConsiderations,
           },
         ]}
       />
@@ -350,7 +313,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: webWireFrame,
+            data: images.webWireFrame,
           },
         ]}
       />
@@ -361,7 +324,7 @@ function Taqueria() {
             type: ProjectContentType.PARAGRAPH,
             data: "Three variations are shown below. The first is web (assuming standard display size), next is a tablet view built around 12.9 inch iPad, and the third shown is for mobile built on a Google Pixel 6.",
           },
-          { type: ProjectContentType.IMAGE, data: webDigitalWireframe },
+          { type: ProjectContentType.IMAGE, data: images.webDigitalWireframe },
         ]}
       />
       <ProjectContent
@@ -371,7 +334,10 @@ function Taqueria() {
             type: ProjectContentType.PARAGRAPH,
             data: "The user flow for this site was inspired by the order of the process in a line at a buffet. First, you are welcomed to the location before deciding which overall food area interests you. Next you can select individual ingredients, in this case it is proteins, vegetables, tortillas, etc. Finally, addons, drinks, and desserts are available. In the case of the app flow, you end with the option to review and change your order before finalizing it.",
           },
-          { type: ProjectContentType.IMAGE, data: webLowFidelityPrototype },
+          {
+            type: ProjectContentType.IMAGE,
+            data: images.webLowFidelityPrototype,
+          },
         ]}
       />
       <ProjectContent
@@ -383,7 +349,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: responsiveMockups,
+            data: images.responsiveMockups,
           },
         ]}
       />
@@ -396,7 +362,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: usabilityStudyPains,
+            data: images.usabilityStudyPains,
           },
         ]}
       />
@@ -409,7 +375,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: webHomeChanges,
+            data: images.webHomeChanges,
           },
           {
             type: ProjectContentType.PARAGRAPH,
@@ -417,7 +383,7 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: webHomeChanges2,
+            data: images.webHomeChanges2,
           },
         ]}
       />
@@ -430,15 +396,15 @@ function Taqueria() {
           },
           {
             type: ProjectContentType.IMAGE,
-            data: hifiWeb,
+            data: images.hifiWeb,
           },
           {
             type: ProjectContentType.IMAGE,
-            data: hifiTablet,
+            data: images.hifiTablet,
           },
           {
             type: ProjectContentType.IMAGE,
-            data: hifiMobile,
+            data: images.hifiMobile,
           },
         ]}
       />
