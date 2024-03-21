@@ -17,7 +17,7 @@ import lowFidelityProto from "./lowFidelityPrototype.jpg";
 import mobileHomePage from "./16homeMobile.jpg";
 import arrowRightAlt from "./arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import arrowLeftAlt from "./arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
-import menuWithReturnShown from "./17_menu.webp";
+import menuWithReturnShown from "./17_menu.png";
 import usabilityPlaceholder from "./placeholderUsabilityStudy.png";
 import mockup1 from "./mockup1.jpg";
 import mockup2 from "./mockup2.jpg";

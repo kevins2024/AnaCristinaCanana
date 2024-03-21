@@ -98,7 +98,7 @@ function Taqueria() {
       />
       <br />
       {/* todo make this a component */}
-      <img src={images.placeholder01} className="project-content-image" />
+      <img src={images.placeholder01} className="project-content-image-small" />
       <ProjectContent
         title="Personas"
         content={[
@@ -187,6 +187,7 @@ function Taqueria() {
         <img style={{ maxWidth: "100%" }} src={images.wireframe07} />
         <img style={{ maxWidth: "100%" }} src={images.wireframe08} />
       </div>
+      <br />
       <ProjectContent
         title="Low Fidelity Prototype"
         content={[
@@ -209,20 +210,31 @@ function Taqueria() {
       <div
         style={{ display: "flex", width: "var(--content-width-full-medium)" }}
       >
-        <div style={{ width: "22%" }}>
+        <div
+          style={{
+            width: "22%",
+            fontSize: "10pt",
+            textAlign: "right",
+            paddingTop: "1vh",
+          }}
+        >
           Profile and cart buttons are always easy to locate
         </div>
         <div style={{ width: "5%", paddingTop: "2%" }}>
           <img src={images.arrowRightAlt} style={{ width: "100%" }} />
         </div>
-        <img
-          style={{ backgroundColor: "red", maxWidth: "44%" }}
-          src={images.mobileHomePage}
-        />
+        <img style={{ maxWidth: "36%" }} src={images.mobileHomePage} />
         <div style={{ width: "5%", alignSelf: "end", paddingBottom: "8%" }}>
           <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
         </div>
-        <div style={{ width: "22%", alignSelf: "end", paddingBottom: "5%" }}>
+        <div
+          style={{
+            width: "22%",
+            alignSelf: "end",
+            paddingBottom: "5%",
+            fontSize: "10pt",
+          }}
+        >
           Home page also displays the previous orders and allows customer to add
           it to the cart with a single click or tap.
         </div>
@@ -244,13 +256,20 @@ function Taqueria() {
         <div style={{ minWidth: "22%" }}></div>
         <div style={{ minWidth: "5%" }}></div>
         <img
-          style={{ backgroundColor: "red", width: "44%" }}
+          style={{ backgroundColor: "red", width: "36%" }}
           src={images.menuWithReturnShown}
         />
         <div style={{ minWidth: "5%", alignSelf: "end", paddingBottom: "2%" }}>
           <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
         </div>
-        <div style={{ minWidth: "22%", alignSelf: "end", paddingBottom: "2%" }}>
+        <div
+          style={{
+            minWidth: "22%",
+            alignSelf: "end",
+            paddingBottom: "2%",
+            fontSize: "10pt",
+          }}
+        >
           The user is also able to exit this page and go back to the menu if
           they want to completely change the meal being ordered.
         </div>
@@ -266,7 +285,13 @@ function Taqueria() {
         ]}
       />
       <br />
-      <div className="project-content-title">Mockups</div>
+      <br />
+      <div
+        style={{ alignSelf: "flex-start", marginLeft: "10%" }}
+        className="project-content-title"
+      >
+        Mockups
+      </div>
       <br />
       <div // copy paste from above grid
         style={{

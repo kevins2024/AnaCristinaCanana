@@ -16,5 +16,11 @@
   max-height: calc(80vh - 88px);
 }
 
+.project-content-image-small {
+  align-self: center;
+  max-width: 60vw;
+  max-height: calc(70vh - 88px);
+}
+
 /* .project-content-paragraph {
 } */
