@@ -5,6 +5,7 @@
   --text-color-light-minorhighlight: #b9b9b9;
   --text-color-light-minordisable: #949494;
 
-  /* todo might not use */
-  --text-color-heading: #222f2a;
+  --content-width-full: 80%;
+  /* full-medium is used as 70% of the 80%*/
+  --content-width-full-medium: 70%;
 }

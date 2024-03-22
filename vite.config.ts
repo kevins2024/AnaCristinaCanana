@@ -6,9 +6,9 @@ export default defineConfig(({ command }) => {
   const config = { base: "/", plugins: [react()] };
 
   // This is counter-intuitive to me, but it is correct
-  if (command !== "serve") {
-    config.base = "/AnaCristinaCanana";
-  }
+  // if (command !== "serve") {
+  //   config.base = "/AnaCristinaCanana";
+  // }
 
   return config;
 });

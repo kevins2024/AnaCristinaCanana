@@ -33,7 +33,11 @@ function TopBar() {
 
   return (
     <div className="top-bar">
-      <img onClick={goHome} src={acLogo} style={{ marginLeft: "20px" }} />
+      <img
+        onClick={goHome}
+        src={acLogo}
+        style={{ marginLeft: "20px", cursor: "pointer" }}
+      />
       <div className="top-bar-button-box">
         {buttons.map((button) => (
           <NavLink

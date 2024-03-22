@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 
 function ComponentWrapper(props: ComponentWrapperProps) {
   var styles = {
-    width: "80%",
+    width: "var(--content-width-full)",
     display: "flex",
     flexDirection: props.direction ? props.direction : "row",
   } as CSSProperties; // workaround/fix detailed here https://github.com/cssinjs/jss/issues/1344

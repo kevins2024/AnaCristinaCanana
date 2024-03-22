@@ -13,7 +13,7 @@ import About from "./pages/about/About";
 
 function App() {
   return (
-    <div className="root-container root-background">
+    <div className="root-container">
       <TopBar />
       <Routes>
         <Route path="/" element={<Landing />} />

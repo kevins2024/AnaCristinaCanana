@@ -1,3 +1,26 @@
 .projects-content {
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.projects-layout {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+}
+
+.project-preview-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-preview-row-item {
+  width: 25vw;
+  text-align: center;
+}
+
+.button-image {
+  border: none;
+  background: none;
+  cursor: pointer;
 }

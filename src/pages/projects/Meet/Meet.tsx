@@ -200,7 +200,7 @@ function Meet() {
         style={{
           display: "grid",
           gridTemplateColumns: "28% 28% 28%",
-          width: "80%",
+          width: "var(--content-width-full)",
           gap: "1%",
           marginLeft: "12%",
         }}
@@ -253,7 +253,7 @@ function Meet() {
         style={{
           display: "grid",
           gridTemplateColumns: "28% 28% 28%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "1%",
           marginLeft: "12%",
         }}
@@ -271,7 +271,7 @@ function Meet() {
         style={{
           display: "grid",
           gridTemplateColumns: "40% 40%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "1%",
           marginLeft: "12%",
         }}

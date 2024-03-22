@@ -53,7 +53,7 @@ function Orb() {
             style={{
               display: "flex",
               flexDirection: "column",
-              width: "80%",
+              width: "var(--content-width-full-medium)",
               marginTop: "15vh",
               marginLeft: "5vw",
             }}
@@ -333,7 +333,7 @@ function Orb() {
         style={{
           display: "grid",
           gridTemplateColumns: "19% 19% 19% 19% 19%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: ".5%",
         }}
       >
@@ -466,7 +466,7 @@ function Orb() {
         style={{
           display: "grid",
           gridTemplateColumns: "14% 20% 20% 20% 20%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: ".5%",
         }}
       >
@@ -493,7 +493,7 @@ function Orb() {
         style={{
           display: "grid",
           gridTemplateColumns: "17.5% 28% 28% 17.5%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "3%",
         }}
       >
@@ -511,7 +511,7 @@ function Orb() {
         style={{
           display: "grid",
           gridTemplateColumns: "23.5% 23.5% 23.5% 23.5%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "2%",
         }}
       >
@@ -540,7 +540,7 @@ function Orb() {
         style={{
           display: "grid",
           gridTemplateColumns: "17.5% 28% 28% 17.5%",
-          width: "80%",
+          width: "var(--content-width-full-medium)",
           gap: "3%",
         }}
       >

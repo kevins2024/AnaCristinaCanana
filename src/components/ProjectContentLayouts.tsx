@@ -1,7 +1,6 @@
-// todo need to make a width 80% wrapper somewhere.
 const outerFlexStyle = {
   display: "flex",
-  width: "80%",
+  width: "var(--content-width-full)",
   justifyContent: "space-between",
 };
 
