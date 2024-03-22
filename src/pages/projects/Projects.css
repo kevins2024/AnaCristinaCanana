@@ -18,3 +18,9 @@
   width: 25vw;
   text-align: center;
 }
+
+.button-image {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
