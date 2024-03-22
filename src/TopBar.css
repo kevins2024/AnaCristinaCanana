@@ -6,7 +6,6 @@
   align-items: center;
   position: fixed;
   overflow: hidden;
-  background-image: url("./assets/background-main.png");
   padding-bottom: calc(100vh - 88px);
   margin-bottom: calc(-1 * calc(100vh - 88px));
 }

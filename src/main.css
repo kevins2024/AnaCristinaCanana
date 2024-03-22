@@ -20,11 +20,6 @@ h2 {
   flex-direction: column;
   height: 100vh;
   margin: auto;
-}
-
-/* .root-background {
-  background-image: url("./assets/background-main.png");
+  background-image: url(/src/assets/background-main.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-} */
+}
