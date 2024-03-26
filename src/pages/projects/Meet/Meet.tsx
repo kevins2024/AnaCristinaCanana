@@ -230,6 +230,8 @@ function Meet() {
           },
         ]}
       />
+      <br />
+      <br />
       <SubHeading>Responsive Web Design</SubHeading>
       <ProjectContent
         title="Paper Wireframe"
