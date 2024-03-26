@@ -10,7 +10,6 @@ function Projects() {
   const hrefTaqueria = "/projects/taqueria";
   const hrefMeet = "/projects/meet";
   const hrefOrb = "/projects/myorb";
-  const hrefPre = "/#";
 
   function handleClick(url: string) {
     navigate(url);
@@ -20,6 +19,9 @@ function Projects() {
     <div className="projects-content content-panel">
       <div className="projects-layout">
         <div className="project-preview-row">
+          <button className="button-image" onClick={() => handleClick(hrefOrb)}>
+            <img src={orbImage} className="project-preview-row-item" />
+          </button>
           <button
             className="button-image"
             onClick={() => handleClick(hrefTaqueria)}
@@ -32,33 +34,39 @@ function Projects() {
           >
             <img src={meetImage} className="project-preview-row-item" />
           </button>
-          <button className="button-image" onClick={() => handleClick(hrefOrb)}>
-            <img src={orbImage} className="project-preview-row-item" />
-          </button>
         </div>
         <div style={{ height: "2vh" }}></div>
         <div className="project-preview-row">
+          <span className="project-preview-row-item">
+            {ProjectText[ProjectNames.ORB]}
+          </span>
           <span className="project-preview-row-item">
             {ProjectText[ProjectNames.TAQUERIA]}
           </span>
           <span className="project-preview-row-item">
             {ProjectText[ProjectNames.MEET]}
           </span>
-          <span className="project-preview-row-item">
-            {ProjectText[ProjectNames.ORB]}
-          </span>
         </div>
-        <div style={{ height: "1vh" }}></div>
+        <div style={{ height: "2vh" }}></div>
         <div className="project-preview-row">
-          <a className="project-preview-row-item" href={hrefPre + hrefTaqueria}>
+          <button
+            className="project-preview-row-item primary-button"
+            onClick={() => handleClick(hrefOrb)}
+          >
             Read More
-          </a>
-          <a className="project-preview-row-item" href={hrefPre + hrefMeet}>
+          </button>
+          <button
+            className="project-preview-row-item primary-button"
+            onClick={() => handleClick(hrefTaqueria)}
+          >
             Read More
-          </a>
-          <a className="project-preview-row-item" href={hrefPre + hrefOrb}>
+          </button>
+          <button
+            className="project-preview-row-item primary-button"
+            onClick={() => handleClick(hrefMeet)}
+          >
             Read More
-          </a>
+          </button>
         </div>
         <div style={{ height: "8vh" }}></div>
       </div>

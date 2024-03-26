@@ -23,3 +23,13 @@ h2 {
   background-image: url(/src/assets/background-main.png);
   background-size: cover;
 }
+
+.primary-button {
+  background-color: #3b4545;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  height: 37px;
+  width: 115px;
+  cursor: pointer;
+}

@@ -1,34 +1,59 @@
-.about-layout {
+/* .about-layout {
   position: relative;
   top: 88px;
   width: 100%;
   min-height: calc(100% - 88px);
   background-color: var(--background-color-light);
-  overflow: hidden;
+  overflow: auto;
+} */
+
+.about-top-spacing {
+  height: 5%;
 }
 
-.about-left {
+.about-layout {
+  display: flex;
+  width: 90%;
+}
+
+/* .about-left {
   position: absolute;
   top: 5%;
   left: 5%;
   width: 35%;
   height: 90%;
+} */
+
+.about-left {
+  flex-basis: 38%;
 }
 
 .about-me-image {
   width: 100%;
 }
 
-.about-right {
+.about-middle {
+  flex-basis: 5%;
+}
+
+/* .about-right {
   position: absolute;
   top: 25%;
   left: 45%;
   width: 50%;
   height: 50%;
   text-align: center;
+} */
+
+.about-right {
+  text-align: center;
+  flex-basis: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.about-container {
+/* .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,15 +61,15 @@
   top: -1%;
   left: 100%;
   transform: translateX(-50%);
-}
+} */
 
-.about-container div {
+/* .about-container div {
   font-weight: bold;
   margin: 0px;
   padding: 0 6% 0 6%;
-}
+} */
 
-.about-hello {
+/* .about-hello {
   font-size: min(5.8vh, 5.8vw);
   background-color: #eeeeee66;
 }
@@ -56,13 +81,18 @@
 .about-ola {
   font-size: min(4.5vh, 4.5vw);
   background-color: #88888866;
-}
+} */
 
-.resume-link {
+/* .resume-link {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 50%;
   width: 100%;
   text-align: center;
   transform: translateX(-50%);
+  background-color: white;
+} */
+
+.about-bottom-spacing {
+  height: 5%;
 }
