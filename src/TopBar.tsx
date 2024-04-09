@@ -1,8 +1,12 @@
 import "./TopBar.css";
 import acLogo from "./assets/logo-ac.png";
 import { NavLink, useNavigate } from "react-router-dom";
+import hamburgerMenu from "./assets/menu_FILL0_wght400_GRAD0_opsz24.svg";
+import { useState } from "react";
 
 function TopBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const buttons: navButtonData[] = [
     {
       display: "PROJECTS",
@@ -31,29 +35,54 @@ function TopBar() {
     navigate("/");
   }
 
+  function toggleBurgerMenu(event: React.MouseEvent) {
+    if (
+      isMenuOpen &&
+      !(event.target as HTMLElement).classList.contains("can-close")
+    )
+      return;
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
-    <div className="top-bar">
-      <img
-        onClick={goHome}
-        src={acLogo}
-        style={{ marginLeft: "20px", cursor: "pointer" }}
-      />
-      <div className="top-bar-button-box">
-        {buttons.map((button) => (
-          <NavLink
-            className={(navData) =>
-              navData.isActive
-                ? "top-bar-button top-bar-button-active"
-                : "top-bar-button"
-            }
-            key={button.display}
-            to={button.path}
-          >
-            {button.display}
-          </NavLink>
-        ))}
+    <>
+      <div className="top-bar">
+        <img onClick={goHome} src={acLogo} className="top-bar-icon" />
+        {/* todo worth it to programmatically remove one of these instead of css? */}
+        <div className="top-bar-button-box">
+          {buttons.map((button) => (
+            <NavLink
+              className={(navData) =>
+                navData.isActive
+                  ? "top-bar-button top-bar-button-active"
+                  : "top-bar-button"
+              }
+              key={button.display}
+              to={button.path}
+            >
+              {button.display}
+            </NavLink>
+          ))}
+        </div>
+        <img
+          onClick={toggleBurgerMenu}
+          className="top-bar-hamburger-icon"
+          src={hamburgerMenu}
+        />
       </div>
-    </div>
+      <div
+        onClick={toggleBurgerMenu}
+        className={`can-close top-bar-hamburger-menu-overlay${
+          !isMenuOpen ? " top-bar-hamburger-menu-closed" : ""
+        }`}
+      >
+        <div className="top-bar-hamburger-menu">
+          <button className="can-close" onClick={toggleBurgerMenu}>
+            X
+          </button>
+        </div>
+      </div>
+    </>
   );
 }
 
