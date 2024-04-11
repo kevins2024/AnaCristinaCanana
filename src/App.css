@@ -16,3 +16,7 @@
 .project-content-heading {
   margin-top: 7vh;
 }
+
+.flex-spacer {
+  flex-shrink: 0;
+}

@@ -2,9 +2,11 @@ export enum ProjectNames {
   MEET = "Meet",
   TAQUERIA = "Taqueria Express",
   ORB = "My Orb",
+  VET = "Pocket Vet",
 }
 
 export const ProjectText = {
+  [ProjectNames.VET]: "Accessibility study for an in-development mobile app",
   [ProjectNames.MEET]:
     "Mobile and responsive web design for expat women to meet others in their new city",
   [ProjectNames.TAQUERIA]:
