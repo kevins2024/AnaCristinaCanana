@@ -15,8 +15,12 @@
 }
 
 .project-preview-row-item {
-  width: 25vw;
+  width: 30%;
   text-align: center;
+}
+
+.project-preview-row-item-inner {
+  width: 100%;
 }
 
 .button-image {

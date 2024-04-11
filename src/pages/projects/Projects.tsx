@@ -19,20 +19,26 @@ function Projects() {
     <div className="projects-content content-panel">
       <div className="projects-layout">
         <div className="project-preview-row">
-          <button className="button-image" onClick={() => handleClick(hrefOrb)}>
-            <img src={orbImage} className="project-preview-row-item" />
+          <button
+            className="button-image project-preview-row-item"
+            onClick={() => handleClick(hrefOrb)}
+          >
+            <img src={orbImage} className="project-preview-row-item-inner" />
           </button>
           <button
-            className="button-image"
+            className="button-image project-preview-row-item"
             onClick={() => handleClick(hrefTaqueria)}
           >
-            <img src={taqueriaImage} className="project-preview-row-item" />
+            <img
+              src={taqueriaImage}
+              className="project-preview-row-item-inner"
+            />
           </button>
           <button
-            className="button-image"
+            className="button-image project-preview-row-item"
             onClick={() => handleClick(hrefMeet)}
           >
-            <img src={meetImage} className="project-preview-row-item" />
+            <img src={meetImage} className="project-preview-row-item-inner" />
           </button>
         </div>
         <div style={{ height: "2vh" }}></div>
@@ -50,19 +56,19 @@ function Projects() {
         <div style={{ height: "2vh" }}></div>
         <div className="project-preview-row">
           <button
-            className="project-preview-row-item primary-button"
+            className="project-preview-row-button primary-button"
             onClick={() => handleClick(hrefOrb)}
           >
             Read More
           </button>
           <button
-            className="project-preview-row-item primary-button"
+            className="project-preview-row-button primary-button"
             onClick={() => handleClick(hrefTaqueria)}
           >
             Read More
           </button>
           <button
-            className="project-preview-row-item primary-button"
+            className="project-preview-row-button primary-button"
             onClick={() => handleClick(hrefMeet)}
           >
             Read More

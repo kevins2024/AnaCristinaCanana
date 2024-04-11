@@ -2,10 +2,10 @@
   width: 100%;
   background-color: var(--background-color-light);
   display: flex;
-  margin-top: 88px;
   z-index: 1;
   overflow-y: scroll;
   min-height: calc(100vh - 88px);
+  max-width: 1400px;
 }
 
 .project-content-layout {
@@ -15,4 +15,12 @@
 
 .project-content-heading {
   margin-top: 7vh;
+}
+
+#content-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: 88px;
+  height: 100%;
 }
