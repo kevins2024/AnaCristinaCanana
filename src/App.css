@@ -3,7 +3,6 @@
   background-color: var(--background-color-light);
   display: flex;
   z-index: 1;
-  overflow-y: scroll;
   min-height: calc(100vh - 88px);
   max-width: 1400px;
 }
@@ -23,4 +22,5 @@
   background-color: white;
   margin-top: 88px;
   height: 100%;
+  overflow: auto;
 }
