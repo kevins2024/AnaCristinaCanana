@@ -28,3 +28,10 @@
   background: none;
   cursor: pointer;
 }
+
+/* todo where should this live? */
+.center-it-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
