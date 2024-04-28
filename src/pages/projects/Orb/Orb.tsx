@@ -47,15 +47,13 @@ function Orb() {
         ]}
       />
       <ProjectContentLayoutOneTwo
-        left={<img style={{ maxWidth: "33vw" }} src={images.mobileHome} />}
+        left={<img style={{ maxWidth: "100%" }} src={images.mobileHome} />}
         right={
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               width: "var(--content-width-full-medium)",
-              marginTop: "15vh",
-              marginLeft: "5vw",
             }}
           >
             <div style={{ display: "flex", paddingBottom: "6px" }}>
@@ -154,8 +152,8 @@ function Orb() {
         ]}
       />
       <ProjectContentLayoutOneOne
-        left={<img style={{ maxWidth: "35vw" }} src={images.previous1} />}
-        right={<img style={{ maxWidth: "35vw" }} src={images.previous2} />}
+        left={<img style={{ maxWidth: "100%" }} src={images.previous1} />}
+        right={<img style={{ maxWidth: "100%" }} src={images.previous2} />}
       />
       <br />
       <SubHeading>Define</SubHeading>
@@ -413,7 +411,7 @@ function Orb() {
             }}
           >
             <div className="project-content-title">Before Usability Study</div>
-            <img style={{ maxWidth: "25vw" }} src={images.lfp1} />
+            <img style={{ maxWidth: "70%" }} src={images.lfp1} />
           </div>
         }
         right={
@@ -425,7 +423,7 @@ function Orb() {
             }}
           >
             <div className="project-content-title">After Usability Study</div>
-            <img style={{ maxWidth: "25vw" }} src={images.homeAfterStudy} />
+            <img style={{ maxWidth: "70%" }} src={images.homeAfterStudy} />
           </div>
         }
       />
@@ -465,7 +463,7 @@ function Orb() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "14% 20% 20% 20% 20%",
+          gridTemplateColumns: "10% 24% 16% 24% 24%",
           width: "var(--content-width-full-medium)",
           gap: ".5%",
         }}
