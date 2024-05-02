@@ -1,0 +1,21 @@
+.project-preview-container {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  width: 375px;
+  margin-top: 50px;
+}
+
+.project-preview-image {
+  max-width: 366px;
+}
+
+.project-button {
+  margin-top: auto;
+  width: 89px;
+  align-self: center;
+}
+
+.project-preview-text {
+  text-align: center;
+}
