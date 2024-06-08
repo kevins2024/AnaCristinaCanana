@@ -108,10 +108,17 @@ function PocketVet() {
         <div style={{ width: "37.5%" }}>
           <img src={images.image1} style={{ width: "100%" }} />
         </div>
-        <div style={{ width: "5%" }}>
+        <div style={{ width: "5%", marginTop: "35%" }}>
           <img src={arrowLeft} style={{ width: "100%" }} />
         </div>
-        <div style={{ width: "20%", paddingRight: "15px" }}>
+        <div
+          style={{
+            width: "20%",
+            paddingRight: "15px",
+            marginTop: "22%",
+            alignSelf: "center",
+          }}
+        >
           <span style={{ fontWeight: "bold" }}>Note:</span> <br />
           This button should complement the body of the dialog.
         </div>
@@ -139,12 +146,15 @@ function PocketVet() {
         }}
       >
         <div style={{ width: "60%" }}>
-          <img src={images.image3} style={{ width: "100%" }} />
+          <img
+            src={images.image3}
+            style={{ width: "100%", border: "1px solid lightgray" }}
+          />
         </div>
-        <div style={{ width: "5%" }}>
+        <div style={{ width: "5%", marginTop: "38%" }}>
           <img src={arrowLeft} style={{ width: "100%" }} />
         </div>
-        <div style={{ width: "25%" }}>
+        <div style={{ width: "25%", alignSelf: "flex-end" }}>
           <span style={{ fontWeight: "bold" }}>Suggestion</span> <br />
           The icon for adding cases could be mistaken for a non-occasional
           button. Implementing a hover state and text would help clarify its
