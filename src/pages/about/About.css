@@ -1,12 +1,3 @@
-/* .about-layout {
-  position: relative;
-  top: 88px;
-  width: 100%;
-  min-height: calc(100% - 88px);
-  background-color: var(--background-color-light);
-  overflow: auto;
-} */
-
 .about-top-spacing {
   height: 5%;
 }
@@ -15,14 +6,6 @@
   display: flex;
   width: 90%;
 }
-
-/* .about-left {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 35%;
-  height: 90%;
-} */
 
 .about-left {
   flex-basis: 38%;
@@ -36,63 +19,18 @@
   flex-basis: 5%;
 }
 
-/* .about-right {
-  position: absolute;
-  top: 25%;
-  left: 45%;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-} */
-
 .about-right {
   text-align: center;
   flex-basis: 57%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
-
-/* .about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: -1%;
-  left: 100%;
-  transform: translateX(-50%);
-} */
-
-/* .about-container div {
-  font-weight: bold;
-  margin: 0px;
-  padding: 0 6% 0 6%;
-} */
-
-/* .about-hello {
-  font-size: min(5.8vh, 5.8vw);
-  background-color: #eeeeee66;
-}
-.about-hola {
-  font-size: min(5.15vh, 5.15vw);
-  color: white;
-  background-color: #000000bb;
-}
-.about-ola {
-  font-size: min(4.5vh, 4.5vw);
-  background-color: #88888866;
-} */
-
-/* .resume-link {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 100%;
-  text-align: center;
-  transform: translateX(-50%);
-  background-color: white;
-} */
 
 .about-bottom-spacing {
   height: 5%;
+}
+
+#pdf-download {
+  transform: translateY(10px);
 }

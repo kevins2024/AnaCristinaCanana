@@ -10,8 +10,12 @@ function ProjectContentLayoutOneTwo(props: LeftRightProps) {
     <>
       <br />
       <div style={outerFlexStyle}>
-        <div style={{ width: "33%" }}>{props.left}</div>
-        <div style={{ width: "67%" }}>{props.right}</div>
+        <div className="center-it-all" style={{ width: "33%" }}>
+          {props.left}
+        </div>
+        <div className="center-it-all" style={{ width: "67%" }}>
+          {props.right}
+        </div>
       </div>
     </>
   );
@@ -37,8 +41,8 @@ function ProjectContentLayoutOneOne(props: LeftRightProps) {
     <>
       <br />
       <div style={{ ...outerFlexStyle, justifyContent: "space-around" }}>
-        <div style={{ width: "40%" }}>{props.left}</div>
-        <div style={{ width: "40%" }}>{props.right}</div>
+        <div style={{ width: "45%" }}>{props.left}</div>
+        <div style={{ width: "45%" }}>{props.right}</div>
       </div>
     </>
   );

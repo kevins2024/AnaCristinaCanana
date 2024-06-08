@@ -47,7 +47,7 @@ function About() {
           <div className="resume-link">
             {/* todo this might be a problem for accessibility */}
             <a href={resume} download="AnaCristina's Resume UX Designer.pdf">
-              <button style={{ width: "200px" }} className="primary-button">
+              <button id="pdf-download" className="primary-button">
                 Download Resume as PDF
               </button>
             </a>

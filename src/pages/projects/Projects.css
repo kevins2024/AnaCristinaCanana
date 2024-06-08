@@ -1,26 +1,18 @@
 .projects-content {
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects-layout {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  justify-content: center;
-}
-
-.project-preview-row {
-  display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
-.project-preview-row-item {
-  width: 25vw;
-  text-align: center;
-}
-
-.button-image {
-  border: none;
-  background: none;
-  cursor: pointer;
+/* todo where should this live? */
+.center-it-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
