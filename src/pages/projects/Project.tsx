@@ -10,7 +10,11 @@ function Project(props: Omit<ProjectData, "order">) {
   }
   return (
     <div className="project-preview-container">
-      <img className="project-preview-image" src={props.image} />
+      <img
+        onClick={() => handleClick(props.url)}
+        className="project-preview-image"
+        src={props.image}
+      />
       <span className="project-preview-text">{props.text}</span>
       <button
         onClick={() => handleClick(props.url)}
