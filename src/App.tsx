@@ -11,6 +11,7 @@ import Orb from "./pages/projects/Orb/Orb";
 import Characters from "./pages/characters/Characters";
 import About from "./pages/about/About";
 import { useLocation } from "react-router-dom";
+import PocketVet from "./pages/projects/PocketVet/PocketVet";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
           <Route path="/projects/taqueria" element={<Taqueria />} />
           <Route path="/projects/meet" element={<Meet />} />
           <Route path="/projects/myorb" element={<Orb />} />
+          <Route path="/projects/pocketvet" element={<PocketVet />} />
           <Route path="/characters" element={<Characters />} />
         </Routes>
       </div>

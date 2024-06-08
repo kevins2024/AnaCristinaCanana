@@ -24,3 +24,7 @@
   height: 100%;
   overflow: auto;
 }
+
+.flex-spacer {
+  flex-shrink: 0;
+}

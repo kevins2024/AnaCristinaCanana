@@ -1,0 +1,66 @@
+.project-preview-container {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  width: 375px;
+  margin-top: 50px;
+}
+
+.project-preview-image {
+  max-width: 366px;
+  cursor: pointer;
+}
+
+.project-button {
+  margin-top: auto;
+  width: 89px;
+  align-self: center;
+}
+
+.project-preview-text {
+  text-align: center;
+}
+
+.status-icon-container {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.status-icon-item {
+  width: 80%;
+  margin: 2% auto 2% auto;
+}
+
+.status-icon-wrapper {
+  border: solid 1px;
+  display: flex;
+  padding: 1% 0 1% 5%;
+}
+
+.pocketvet-icons {
+  height: 18px;
+  align-self: center;
+  margin-right: 18px;
+}
+
+.tab-navigation-container {
+  width: var(--content-width-full);
+  display: flex;
+}
+
+.color-suggestion-container {
+  width: var(--content-width-full);
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-suggestion-left {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-suggestion-right {
+  width: 47%;
+}
