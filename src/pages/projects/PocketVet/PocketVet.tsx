@@ -39,7 +39,9 @@ function PocketVet() {
           <div style={{ fontWeight: "bold", width: "40%" }}>
             Responsibilities:
           </div>
-          <div style={{ width: "60%" }}>Review the application</div>
+          <div style={{ width: "60%" }}>
+            Review the application for accessibility only
+          </div>
         </div>
         <div style={{ display: "flex", paddingBottom: "6px" }}>
           <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
@@ -56,9 +58,9 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: `Pocket Vet Consult is an application designed to facilitate
-              specialist veterinarians in providing consultations to general
-              veterinarians encountering complex cases.`,
+            data: `Pocket Vet Consult is an application designed to aid
+              veterinarians in requesting consultations from specialist
+              veterinarians when encountering complex cases.`,
           },
 
           {
@@ -84,7 +86,12 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "Ensure that buttons have a clear purpose and accompanying text to assist users in making decisions. Action buttons consisting only of images without text can be challenging for screen readers and color-blind users to detect. Including descriptive text alongside images not only enhances accessibility but also promotes smoother navigation for all users.",
+            data: `Ensure that buttons have a clear purpose and accompanying 
+            text to assist users in making decisions. Action buttons consisting 
+            only of images without text can be challenging for screen readers 
+            and color-blind users to detect. Including descriptive text 
+            alongside images not only enhances accessibility but also promotes 
+            smoother navigation for all users.`,
           },
         ]}
       />
@@ -104,11 +111,11 @@ function PocketVet() {
           width: "var(--content-width-full)",
         }}
       >
-        {/* todo need updated images here and align the text and arrow */}
         <div style={{ width: "37.5%" }}>
           <img src={images.image1} style={{ width: "100%" }} />
         </div>
         <div style={{ width: "5%", marginTop: "35%" }}>
+          {/* todo replace the arrow with one with rounded edges, soften color a little, and make it app wide */}
           <img src={arrowLeft} style={{ width: "100%" }} />
         </div>
         <div
@@ -132,7 +139,10 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "Hover states are crucial for identifying buttons, links, and controls. They assist not only users with low vision or colorblindness but also general users in quickly identifying action items and avoiding confusion.",
+            data: `Hover states are crucial for identifying buttons, links, 
+            and controls. They assist not only users with low vision or 
+            colorblindness but also general users in quickly identifying 
+            action items and avoiding confusion.`,
           },
         ]}
       />
@@ -166,7 +176,14 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "To enhance accessibility and clarity for users, consider incorporating symbols like an exclamation mark or asterisk alongside red text to indicate errors. This not only aids users with color vision deficiencies but also ensures screen reader compatibility. Additionally, ensure that error messages are accessible to keyboard-only users by including them in the keyboard tab order. This way, screen readers can detect the error.",
+            data: `To enhance accessibility and clarity for users, consider 
+            incorporating symbols like an exclamation mark or asterisk 
+            alongside red text to indicate errors. Here, I recommend adding a 
+            standardized icon for each case. This not only aids users 
+            with color vision deficiencies but also ensures screen reader 
+            compatibility. Additionally, ensure that error messages are accessible 
+            to keyboard-only users by including them in the keyboard tab order. 
+            This way, screen readers can detect the error.`,
           },
         ]}
       />
@@ -219,7 +236,12 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "Ensuring that all functionalities can be accessed from a keyboard is curcial for users who rely on keyboard navigation due to motor disabilities or other limitations. By enabling keyboard access to all functionalities, designers and developers ensure that their products are inclusive and usable for a wider range of users, promoting equal access and participation for all.",
+            data: `Ensuring that all functionalities can be accessed from a 
+            keyboard is crucial for users who rely on keyboard navigation due 
+            to motor disabilities or other limitations. By enabling keyboard 
+            access to all functionalities, designers and developers ensure 
+            that their products are inclusive and usable for a wider range 
+            of users, promoting equal access and participation for all.`,
           },
         ]}
       />
@@ -230,11 +252,12 @@ function PocketVet() {
         <div style={{ width: "28%", alignSelf: "center" }}>
           <span style={{ fontWeight: "bold" }}>Suggestion</span>
           <br />
-          The form is very easy to navigate using the touch screen. When it
+          The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
           files using only the keyboard.
         </div>
+        {/* todo i can use this transform to only have one arrow asset */}
         <img
           src={arrowLeft}
           style={{
@@ -266,11 +289,15 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "In the chart below you find a simulation of how people with different vision disabilities see the color #8947E9, the primary color for this app.",
+            data: `In the chart below you find a simulation of how people with
+             different vision disabilities see the color #8947E9, the primary 
+             color for this app.`,
           },
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "The WCAG grade the success of the color choices as Level A, AA, or AAA where a is the lowest level of conformance and AAA is the highest.",
+            data: `The WCAG grade the success of the color choices as Level A, 
+            AA, or AAA where a is the lowest level of conformance and AAA is 
+            the highest.`,
           },
         ]}
       />
@@ -289,7 +316,10 @@ function PocketVet() {
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: "Increasing the contrast ratio of the colors will help users with visual disabilities not only to read better but also to distinguish buttons, links, controls, icons, etc. more easily. Suggested color #663399.",
+            data: `Increasing the contrast ratio of the colors will help users 
+            with visual disabilities not only to read better but also to distinguish 
+            buttons, links, controls, icons, etc. more easily. Suggested color 
+            #663399.`,
           },
         ]}
       />
