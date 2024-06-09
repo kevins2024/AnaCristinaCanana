@@ -2,7 +2,8 @@ import "./TopBar.css";
 import acLogo from "./assets/logo-ac.png";
 import closeIcon from "./assets/close-md-svgrepo-com.svg";
 import { NavLink, useNavigate } from "react-router-dom";
-import hamburgerMenu from "./assets/menu_FILL0_wght400_GRAD0_opsz24.svg";
+// import hamburgerMenu from "./assets/menu_FILL0_wght400_GRAD0_opsz24.svg";
+import hamburgerMenu from "./assets/hamburger-menu-svgrepo-com.svg";
 import { useState } from "react";
 
 function TopBar() {

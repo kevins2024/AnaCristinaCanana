@@ -38,6 +38,7 @@
 .top-bar-hamburger-icon {
   padding-right: 15px;
   cursor: pointer;
+  width: 54px;
 }
 
 .top-bar-hamburger-menu-overlay {
