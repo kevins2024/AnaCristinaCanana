@@ -6,11 +6,20 @@ import logo4 from "./assets/logo4.png";
 
 function Logos() {
   return (
-    <div className="content-panel logos-content">
-      <img className="logo-image" src={logo1} />
-      <img className="logo-image" src={logo2} />
-      <img className="logo-image" src={logo3} />
-      <img className="logo-image" src={logo4} />
+    <div className="content-panel">
+      <div className="logos-content">
+        <div className="logos-container">
+          <div className="flex-spacer logo-spacer"></div>
+          <img className="logo-image" src={logo1} />
+          <div className="flex-spacer logo-spacer"></div>
+          <img className="logo-image" src={logo2} />
+          <div className="flex-spacer logo-spacer"></div>
+          <img className="logo-image" src={logo3} />
+          <div className="flex-spacer logo-spacer"></div>
+          <img className="logo-image" src={logo4} />
+          <div className="flex-spacer logo-spacer"></div>
+        </div>
+      </div>
     </div>
   );
 }
