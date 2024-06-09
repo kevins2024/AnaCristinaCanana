@@ -55,10 +55,29 @@
   position: absolute;
   top: 0;
   right: 0;
+  border-radius: 0px 0px 0px 3px;
+  transition: right 0.5s ease-in-out;
 }
 
 .top-bar-hamburger-menu-closed {
-  display: none;
+  visibility: hidden;
+}
+
+.top-bar-hamburger-menu-close-button {
+  border: none;
+  background-color: white;
+  padding: 5%;
+}
+
+.top-bar-hamburger-button {
+  font-weight: bold;
+  text-decoration: none;
+  color: #454545;
+  padding: 13px 0px;
+}
+
+.top-bar-hamburger-button-active {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 720px) {

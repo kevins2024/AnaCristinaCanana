@@ -1,5 +1,6 @@
 import "./TopBar.css";
 import acLogo from "./assets/logo-ac.png";
+import closeIcon from "./assets/close-md-svgrepo-com.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 import hamburgerMenu from "./assets/menu_FILL0_wght400_GRAD0_opsz24.svg";
 import { useState } from "react";
@@ -77,9 +78,39 @@ function TopBar() {
         }`}
       >
         <div className="top-bar-hamburger-menu">
-          <button className="can-close" onClick={toggleBurgerMenu}>
-            X
+          <button
+            className="can-close top-bar-hamburger-menu-close-button"
+            onClick={toggleBurgerMenu}
+          >
+            <img
+              src={closeIcon}
+              style={{ width: "18pt", pointerEvents: "none" }}
+            />
           </button>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "17px",
+            }}
+          >
+            {buttons.map((button) => (
+              <NavLink
+                className={(navData) =>
+                  navData.isActive
+                    ? "top-bar-hamburger-button top-bar-hamburger-button-active can-close"
+                    : "top-bar-hamburger-button can-close"
+                }
+                key={button.display + "-burger"}
+                to={button.path}
+                onClick={toggleBurgerMenu}
+              >
+                {button.display}
+              </NavLink>
+            ))}
+          </div>
         </div>
       </div>
     </>
