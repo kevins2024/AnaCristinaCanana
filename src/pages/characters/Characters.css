@@ -3,3 +3,31 @@
   flex-direction: column;
   align-items: center;
 }
+
+.paper-collection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paper-collection-spacer {
+  height: 35px;
+}
+
+@media screen and (min-width: 720px) {
+  .characters-content-layout {
+    padding-bottom: 40vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paper-collection-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .paper-collection-spacer {
+    display: none;
+  }
+}

@@ -75,43 +75,48 @@ function TopBar() {
       <div
         onClick={toggleBurgerMenu}
         className={`can-close top-bar-hamburger-menu-overlay${
-          !isMenuOpen ? " top-bar-hamburger-menu-closed" : ""
+          !isMenuOpen ? " overlay-hidden" : ""
         }`}
       >
-        <div className="top-bar-hamburger-menu">
-          <button
-            className="can-close top-bar-hamburger-menu-close-button"
-            onClick={toggleBurgerMenu}
-          >
-            <img
-              src={closeIcon}
-              style={{ width: "18pt", pointerEvents: "none" }}
-            />
-          </button>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "17px",
-            }}
-          >
-            {buttons.map((button) => (
-              <NavLink
-                className={(navData) =>
-                  navData.isActive
-                    ? "top-bar-hamburger-button top-bar-hamburger-button-active can-close"
-                    : "top-bar-hamburger-button can-close"
-                }
-                key={button.display + "-burger"}
-                to={button.path}
-                onClick={toggleBurgerMenu}
-              >
-                {button.display}
-              </NavLink>
-            ))}
-          </div>
+        {" "}
+      </div>
+      <div
+        className={`top-bar-hamburger-menu${
+          isMenuOpen ? " top-bar-hamburger-menu-open" : ""
+        }`}
+      >
+        <button
+          className="can-close top-bar-hamburger-menu-close-button"
+          onClick={toggleBurgerMenu}
+        >
+          <img
+            src={closeIcon}
+            style={{ width: "18pt", pointerEvents: "none" }}
+          />
+        </button>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "17px",
+          }}
+        >
+          {buttons.map((button) => (
+            <NavLink
+              className={(navData) =>
+                navData.isActive
+                  ? "top-bar-hamburger-button top-bar-hamburger-button-active can-close"
+                  : "top-bar-hamburger-button can-close"
+              }
+              key={button.display + "-burger"}
+              to={button.path}
+              onClick={toggleBurgerMenu}
+            >
+              {button.display}
+            </NavLink>
+          ))}
         </div>
       </div>
     </>

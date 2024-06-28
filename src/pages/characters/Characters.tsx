@@ -18,18 +18,15 @@ function Characters() {
           Paper Collection
         </div>
         <br />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-around",
-          }}
-        >
+        <div className="paper-collection-container">
           <div>
             <img style={{ maxWidth: "80%" }} src={image2} />
           </div>
+          <div className="flex-spacer paper-collection-spacer"></div>
           <div>
             <img style={{ maxWidth: "80%" }} src={image3} />
           </div>
+          <div className="flex-spacer paper-collection-spacer"></div>
           <div>
             <img style={{ maxWidth: "80%" }} src={image4} />
           </div>
