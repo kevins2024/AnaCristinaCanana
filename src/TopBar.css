@@ -73,6 +73,7 @@
   border: none;
   background-color: white;
   padding: 5%;
+  cursor: pointer;
 }
 
 .top-bar-hamburger-button {
