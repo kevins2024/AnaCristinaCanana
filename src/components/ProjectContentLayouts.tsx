@@ -1,21 +1,13 @@
-const outerFlexStyle = {
-  display: "flex",
-  width: "var(--content-width-full)",
-  justifyContent: "space-between",
-};
+import "./ProjectContentLayouts.css";
 
 function ProjectContentLayoutOneTwo(props: LeftRightProps) {
   return (
     // Since this is a layout component I'm going to put the styling here
     <>
       <br />
-      <div style={outerFlexStyle}>
-        <div className="center-it-all" style={{ width: "33%" }}>
-          {props.left}
-        </div>
-        <div className="center-it-all" style={{ width: "67%" }}>
-          {props.right}
-        </div>
+      <div className="pcl-outer-flex">
+        <div className="center-it-all pcl-one-two-left">{props.left}</div>
+        <div className="center-it-all pcl-one-two-right">{props.right}</div>
       </div>
     </>
   );
@@ -26,10 +18,10 @@ function ProjectContentLayoutThreeColumns(props: ThreeColProps) {
   return (
     <>
       <br />
-      <div style={outerFlexStyle}>
-        <div style={{ width: "31%" }}>{props.left}</div>
-        <div style={{ width: "31%" }}>{props.center}</div>
-        <div style={{ width: "31%" }}>{props.right}</div>
+      <div className="pcl-outer-flex">
+        <div className="pcl-three-columns">{props.left}</div>
+        <div className="pcl-three-columns">{props.center}</div>
+        <div className="pcl-three-columns">{props.right}</div>
       </div>
     </>
   );
@@ -40,9 +32,9 @@ function ProjectContentLayoutOneOne(props: LeftRightProps) {
     // Since this is a layout component I'm going to put the styling here
     <>
       <br />
-      <div style={{ ...outerFlexStyle, justifyContent: "space-around" }}>
-        <div style={{ width: "45%" }}>{props.left}</div>
-        <div style={{ width: "45%" }}>{props.right}</div>
+      <div className="pcl-outer-flex pcl-outer-flex-space-around">
+        <div className="pcl-one-one">{props.left}</div>
+        <div className="pcl-one-one">{props.right}</div>
       </div>
     </>
   );
@@ -69,7 +61,3 @@ interface ThreeColProps extends LeftRightProps {
 //   ONE_ONE_ONE,
 //   ONE_ONE,
 // }
-
-// todo another idea, have all my project components accept a styles prop
-// and potentially a function that can wrap a component with conditional
-// styles
