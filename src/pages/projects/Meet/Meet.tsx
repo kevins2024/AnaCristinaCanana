@@ -3,6 +3,7 @@ import Heading from "../../../components/Heading";
 import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
+import ProjectFacts from "../../../components/ProjectFacts";
 import SubHeading from "../../../components/SubHeading";
 import images from "./assets"; // todo experimental, see if this is better than taqueria approach
 
@@ -57,30 +58,15 @@ function Meet() {
           width: "40%",
         }}
       >
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Project Duration:
-          </div>
-          <div style={{ width: "60%" }}>February to July 2023</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Responsibilities:
-          </div>
-          <div style={{ width: "60%" }}>
-            Plan, design, execute design, user test, and iterate through
-            wireframe, low fidelity, high fidelity, until finally the completed
-            design
-          </div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
-          <div style={{ width: "60%" }}>UX designer, student</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
-          <div style={{ width: "60%" }}>Adobe Xd</div>
-        </div>
+        <ProjectFacts
+          titles={["Project Duration:", "Responsibilities:", "Role:", "Tools:"]}
+          values={[
+            "February to July 2023",
+            "Plan, design, execute design, user test, and iterate through wireframe, low fidelity, high fidelity, until finally the completed design",
+            "UX designer, student",
+            "Adobe Xd",
+          ]}
+        />
       </div>
       <ProjectContent
         title="User Research"

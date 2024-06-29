@@ -1,0 +1,35 @@
+.project-facts-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-facts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-facts-title {
+  font-weight: bold;
+  width: 100%;
+}
+
+.project-facts-value {
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .project-facts-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 6px;
+  }
+
+  .project-facts-title {
+    width: 40%;
+  }
+
+  .project-facts-value {
+    width: 60%;
+  }
+}

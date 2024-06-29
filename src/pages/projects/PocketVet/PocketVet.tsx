@@ -5,10 +5,13 @@ import ProjectContent, {
 } from "../../../components/ProjectContent";
 import images from "./assets/index.ts";
 import arrowLeft from "../Taqueria/assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
+import arrowRight from "../Taqueria/assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import success from "./assets/check-circle-svgrepo-com.svg";
 import warning from "./assets/warning-svgrepo-com.svg";
 import info from "./assets/info-svgrepo-com.svg";
 import error from "./assets/warning-circle-svgrepo-com.svg";
+import "./PocketVet.css";
+import ProjectFacts from "../../../components/ProjectFacts.tsx";
 
 function PocketVet() {
   return (
@@ -21,38 +24,17 @@ function PocketVet() {
           </Heading>
         }
       />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "40%",
-        }}
-      >
+      <div className="vet-summary-section">
         <br />
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Project Duration:
-          </div>
-          <div style={{ width: "60%" }}>February to May 2024</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Responsibilities:
-          </div>
-          <div style={{ width: "60%" }}>
-            Review the application for accessibility only
-          </div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
-          <div style={{ width: "60%" }}>UX Consultant</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
-          <div style={{ width: "60%" }}>
-            Figma and Web Content Accessibility Guide
-          </div>
-        </div>
+        <ProjectFacts
+          titles={["Project Duration:", "Responsibilities:", "Role:", "Tools:"]}
+          values={[
+            "February to May 2024",
+            "Review the application for accessibility only",
+            "UX Consultant",
+            "Figma and Web Content Accessibility Guide",
+          ]}
+        />
       </div>
       <ProjectContent
         content={[
@@ -95,42 +77,24 @@ function PocketVet() {
           },
         ]}
       />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "70%",
-        }}
-      >
-        <p style={{ fontWeight: "bold" }}>Before</p>
-        <p style={{ fontWeight: "bold" }}>Suggested</p>
+      <div className="vet-button-suggestion-header">
+        <b>Before</b>
+        <b>Suggested</b>
       </div>
-      <div
-        style={{
-          display: "flex",
-          width: "var(--content-width-full)",
-        }}
-      >
-        <div style={{ width: "37.5%" }}>
-          <img src={images.image1} style={{ width: "100%" }} />
+      <div className="vet-button-suggestion-container">
+        <div className="vet-button-suggestion-image-wrapper">
+          <img src={images.image1} />
         </div>
-        <div style={{ width: "5%", marginTop: "35%" }}>
+        <div className="vet-button-suggestion-arrow-container">
           {/* todo replace the arrow with one with rounded edges, soften color a little, and make it app wide */}
-          <img src={arrowLeft} style={{ width: "100%" }} />
+          <img src={arrowLeft} />
         </div>
-        <div
-          style={{
-            width: "20%",
-            paddingRight: "15px",
-            marginTop: "22%",
-            alignSelf: "center",
-          }}
-        >
-          <span style={{ fontWeight: "bold" }}>Note:</span> <br />
+        <div className="vet-button-suggestion-textbox">
+          <span className="bold">Note:</span> <br />
           This button should complement the body of the dialog.
         </div>
-        <div style={{ width: "37.5%" }}>
-          <img src={images.image2} style={{ width: "100%" }} />
+        <div className="vet-button-suggestion-image-wrapper">
+          <img src={images.image2} />
         </div>
       </div>
 
@@ -148,24 +112,15 @@ function PocketVet() {
       />
       <br />
       <br />
-      <div
-        style={{
-          display: "flex",
-          width: "var(--content-width-full)",
-          justifyContent: "center",
-        }}
-      >
-        <div style={{ width: "60%" }}>
-          <img
-            src={images.image3}
-            style={{ width: "100%", border: "1px solid lightgray" }}
-          />
+      <div className="vet-hovering-container">
+        <div className="vet-hovering-image-wrapper">
+          <img src={images.image3} />
         </div>
-        <div style={{ width: "5%", marginTop: "38%" }}>
-          <img src={arrowLeft} style={{ width: "100%" }} />
+        <div className="vet-hovering-arrow-container">
+          <img src={arrowLeft} />
         </div>
-        <div style={{ width: "25%", alignSelf: "flex-end" }}>
-          <span style={{ fontWeight: "bold" }}>Suggestion</span> <br />
+        <div className="vet-hovering-textbox">
+          <span className="bold">Suggestion</span> <br />
           The icon for adding cases could be mistaken for a non-occasional
           button. Implementing a hover state and text would help clarify its
           function as an action button.
@@ -187,45 +142,23 @@ function PocketVet() {
           },
         ]}
       />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          width: "var(--content-width-full)",
-          marginTop: "3vh",
-        }}
-      >
-        <img src={images.image4} style={{ width: "35vw" }} />
+      <div className="vet-status-container">
+        <img src={images.image4} className="vet-status-image" />
         <div className="status-icon-container">
-          <div className="status-icon-item" style={{ fontWeight: "bold" }}>
-            Suggestion
-          </div>
-          <div
-            className="status-icon-item status-icon-wrapper"
-            style={{ backgroundColor: "#EBF6F2", borderColor: "#3CA07B" }}
-          >
+          <div className="status-icon-item bold">Suggestion</div>
+          <div className="status-icon-item status-icon-wrapper success">
             <img src={success} className="pocketvet-icons" />
             <div>Invoice created successfully.</div>
           </div>
-          <div
-            className="status-icon-item status-icon-wrapper"
-            style={{ backgroundColor: "#FDF6E9", borderColor: "#E9A720" }}
-          >
+          <div className="status-icon-item status-icon-wrapper warning">
             <img src={warning} className="pocketvet-icons" />
             <div>Hold on a second...</div>
           </div>
-          <div
-            className="status-icon-item status-icon-wrapper"
-            style={{ backgroundColor: "#EAF1F6", borderColor: "#2676A5" }}
-          >
+          <div className="status-icon-item status-icon-wrapper info">
             <img src={info} className="pocketvet-icons" />
             <div>Did you know you can do this?</div>
           </div>
-          <div
-            className="status-icon-item status-icon-wrapper"
-            style={{ backgroundColor: "#FDEEEE", borderColor: "#E35256" }}
-          >
+          <div className="status-icon-item status-icon-wrapper error">
             <img src={error} className="pocketvet-icons" />
             <div>It looks like something went wrong.</div>
           </div>
@@ -249,31 +182,24 @@ function PocketVet() {
       {/* todo change all fontweight: bold to h3 or smaller
       todo change all br tags to divs with spacing */}
       <div className="tab-navigation-container">
-        <div style={{ width: "28%", alignSelf: "center" }}>
-          <span style={{ fontWeight: "bold" }}>Suggestion</span>
+        <div className="tab-navigation-wrapper">
+          <span className="bold">Suggestion</span>
           <br />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
           files using only the keyboard.
         </div>
-        {/* todo i can use this transform to only have one arrow asset */}
+        {/* todo move arrow asset files */}
+        <img className="tab-navigation-arrow-right" src={arrowRight} />
         <img
-          src={arrowLeft}
-          style={{
-            width: "5%",
-            WebkitTransform: "scaleX(-1)",
-            transform: "scaleX(-1)",
-            marginTop: "13%",
-          }}
-        />
-        <img
+          className="tab-navigation-image"
           src={images.image6}
           style={{ width: "34%", height: "auto", objectFit: "contain" }}
         />
-        <img src={arrowLeft} style={{ width: "5%", marginTop: "19%" }} />
-        <div style={{ width: "28%", alignSelf: "flex-end" }}>
-          <span style={{ fontWeight: "bold" }}>Suggestion</span>
+        <img src={arrowLeft} className="tab-navigation-arrow-left" />
+        <div className="tab-navigation-textbox">
+          <span className="bold">Suggestion</span>
           <br />
           The save button contrast, when selected by keyboard navigation, is
           very low compared with the contrast of the rest of the form.
@@ -304,11 +230,11 @@ function PocketVet() {
       <br />
       <div className="color-suggestion-container">
         <div className="color-suggestion-left">
-          <img src={images.image7} style={{ width: "100%" }} />
-          <img src={images.image9} style={{ width: "100%" }} />
+          <img src={images.image7} className="color-suggestion-image" />
+          <img src={images.image9} className="color-suggestion-image" />
         </div>
         <div className="color-suggestion-right">
-          <img src={images.image8} style={{ width: "100%" }} />
+          <img src={images.image8} className="color-suggestion-image" />
         </div>
       </div>
       <ProjectContent
@@ -326,11 +252,11 @@ function PocketVet() {
       <br />
       <div className="color-suggestion-container">
         <div className="color-suggestion-left">
-          <img src={images.image10} style={{ width: "100%" }} />
-          <img src={images.image12} style={{ width: "100%" }} />
+          <img src={images.image10} className="color-suggestion-image" />
+          <img src={images.image12} className="color-suggestion-image" />
         </div>
         <div className="color-suggestion-right">
-          <img src={images.image11} style={{ width: "100%" }} />
+          <img src={images.image11} className="color-suggestion-image" />
         </div>
       </div>
       {/* todo make a global class for bottom of page */}

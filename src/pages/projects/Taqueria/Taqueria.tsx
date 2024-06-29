@@ -3,6 +3,7 @@ import Heading from "../../../components/Heading";
 import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
+import ProjectFacts from "../../../components/ProjectFacts";
 import SubHeading from "../../../components/SubHeading";
 
 import images from "./assets";
@@ -58,29 +59,31 @@ function Taqueria() {
           width: "40%",
         }}
       >
+        <ProjectFacts
+          titles={["Project Duration:", "Responsibilities:", "Role:", "Tools:"]}
+          values={[
+            "February 5th to August 3rd 2022",
+            "Plan, design, execute design, user test, and iterate through wireframe, low fidelity, high fidelity, until finally the completed design",
+            "UX designer, student",
+            "Figma, Adobe Xd",
+          ]}
+        />
+
         <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Project Duration:
-          </div>
-          <div style={{ width: "60%" }}>February 5th to August 3rd 2022</div>
+          <div style={{ fontWeight: "bold", width: "40%" }}></div>
+          <div style={{ width: "60%" }}></div>
         </div>
         <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Responsibilities:
-          </div>
-          <div style={{ width: "60%" }}>
-            Plan, design, execute design, user test, and iterate through
-            wireframe, low fidelity, high fidelity, until finally the completed
-            design
-          </div>
+          <div style={{ fontWeight: "bold", width: "40%" }}></div>
+          <div style={{ width: "60%" }}></div>
         </div>
         <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
-          <div style={{ width: "60%" }}>UX designer, student</div>
+          <div style={{ fontWeight: "bold", width: "40%" }}></div>
+          <div style={{ width: "60%" }}></div>
         </div>
         <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
-          <div style={{ width: "60%" }}>Figma, Adobe Xd</div>
+          <div style={{ fontWeight: "bold", width: "40%" }}></div>
+          <div style={{ width: "60%" }}></div>
         </div>
       </div>
       <ProjectContent

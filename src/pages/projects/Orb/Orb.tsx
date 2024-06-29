@@ -8,6 +8,7 @@ import {
   ProjectContentLayoutOneTwo,
   ProjectContentLayoutThreeColumns,
 } from "../../../components/ProjectContentLayouts";
+import ProjectFacts from "../../../components/ProjectFacts";
 import SubHeading from "../../../components/SubHeading";
 import images from "./assets";
 
@@ -56,30 +57,20 @@ function Orb() {
               width: "var(--content-width-full-medium)",
             }}
           >
-            <div style={{ display: "flex", paddingBottom: "6px" }}>
-              <div style={{ fontWeight: "bold", width: "40%" }}>
-                Project Duration:
-              </div>
-              <div style={{ width: "60%" }}>May to September 2023</div>
-            </div>
-            <div style={{ display: "flex", paddingBottom: "6px" }}>
-              <div style={{ fontWeight: "bold", width: "40%" }}>
-                Responsibilities:
-              </div>
-              <div style={{ width: "60%" }}>
-                {
-                  "Plan, create, and execute mobile app design. Demo to stakeholders and iterate changes."
-                }
-              </div>
-            </div>
-            <div style={{ display: "flex", paddingBottom: "6px" }}>
-              <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
-              <div style={{ width: "60%" }}>Lead UX Designer</div>
-            </div>
-            <div style={{ display: "flex", paddingBottom: "6px" }}>
-              <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
-              <div style={{ width: "60%" }}>Adobe Xd, Photoshop, Procreate</div>
-            </div>
+            <ProjectFacts
+              titles={[
+                "Project Duration:",
+                "Responsibilities:",
+                "Role:",
+                "Tools:",
+              ]}
+              values={[
+                "May to September 2023",
+                "Plan, create, and execute mobile app design. Demo to stakeholders and iterate changes.",
+                "Lead UX Designer",
+                "Adobe Xd, Photoshop, Procreate",
+              ]}
+            />
           </div>
         }
       />

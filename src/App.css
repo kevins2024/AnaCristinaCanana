@@ -28,3 +28,6 @@
 .flex-spacer {
   flex-shrink: 0;
 }
+
+@media screen and (min-width: 720px) {
+}

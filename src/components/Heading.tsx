@@ -1,3 +1,5 @@
+import "./Heading.css";
+
 // todo where should this live?
 function ToTitleCase(inText: string): string {
   const lowerCaseWords = [
@@ -49,15 +51,7 @@ function ToTitleCase(inText: string): string {
 
 export default function Heading({ children, className }: HeadingProps) {
   return (
-    <h1
-      style={{
-        maxWidth: "50%",
-        textAlign: "center",
-      }}
-      className={className}
-    >
-      {ToTitleCase(children)}
-    </h1>
+    <h1 className={className + " shared-heading"}>{ToTitleCase(children)}</h1>
   );
 }
 
