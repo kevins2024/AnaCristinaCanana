@@ -12,6 +12,7 @@ import info from "./assets/info-svgrepo-com.svg";
 import error from "./assets/warning-circle-svgrepo-com.svg";
 import "./PocketVet.css";
 import ProjectFacts from "../../../components/ProjectFacts.tsx";
+import SpacerVertical from "../../../components/SpacerVertical.tsx";
 
 function PocketVet() {
   return (
@@ -24,6 +25,7 @@ function PocketVet() {
           </Heading>
         }
       />
+      <SpacerVertical />
       <div className="vet-summary-section">
         <br />
         <ProjectFacts
@@ -36,11 +38,12 @@ function PocketVet() {
           ]}
         />
       </div>
+      <SpacerVertical />
       <ProjectContent
         content={[
           {
             type: ProjectContentType.PARAGRAPH,
-            data: `Pocket Vet Consult is an application designed to aid
+            data: `Pocket Vet is an application designed to aid
               veterinarians in requesting consultations from specialist
               veterinarians when encountering complex cases.`,
           },
@@ -63,6 +66,7 @@ function PocketVet() {
           },
         ]}
       />
+      <SpacerVertical />
       <ProjectContent
         title="Buttons Purposes"
         content={[
@@ -77,25 +81,34 @@ function PocketVet() {
           },
         ]}
       />
-      <div className="vet-button-suggestion-header">
-        <b>Before</b>
-        <b>Suggested</b>
+      <div className="pocket-vet-button-suggestion-desktop-wrapper">
+        <div className="vet-button-suggestion-header">
+          <b>Before</b>
+          <b>Suggested</b>
+        </div>
+        <div className="vet-button-suggestion-container">
+          <div className="vet-button-suggestion-image-wrapper">
+            <img src={images.image1} />
+          </div>
+          <div className="vet-button-suggestion-arrow-container">
+            {/* todo replace the arrow with one with rounded edges, soften color a little, and make it app wide */}
+            <img src={arrowLeft} />
+          </div>
+          <div className="vet-button-suggestion-textbox">
+            <span className="bold">Note:</span> <br />
+            This button should complement the body of the dialog.
+          </div>
+          <div className="vet-button-suggestion-image-wrapper">
+            <img src={images.image2} />
+          </div>
+        </div>
       </div>
-      <div className="vet-button-suggestion-container">
-        <div className="vet-button-suggestion-image-wrapper">
-          <img src={images.image1} />
-        </div>
-        <div className="vet-button-suggestion-arrow-container">
-          {/* todo replace the arrow with one with rounded edges, soften color a little, and make it app wide */}
-          <img src={arrowLeft} />
-        </div>
-        <div className="vet-button-suggestion-textbox">
-          <span className="bold">Note:</span> <br />
-          This button should complement the body of the dialog.
-        </div>
-        <div className="vet-button-suggestion-image-wrapper">
-          <img src={images.image2} />
-        </div>
+      <div className="pocket-vet-button-suggestion-mobile-wrapper">
+        <b>Before</b>
+        <img src={images.image1} />
+        <p>This button should complement the body of the dialog.</p>
+        <b>Suggested</b>
+        <img src={images.image2} />
       </div>
 
       <ProjectContent
@@ -164,6 +177,7 @@ function PocketVet() {
           </div>
         </div>
       </div>
+      <SpacerVertical />
       <ProjectContent
         title="Tab Navigation"
         content={[
@@ -181,7 +195,26 @@ function PocketVet() {
       <br />
       {/* todo change all fontweight: bold to h3 or smaller
       todo change all br tags to divs with spacing */}
-      <div className="tab-navigation-container">
+      <div className="tab-navigation-container-mobile">
+        <img className="tab-navigation-image" src={images.image6} />
+        <b>Suggestions:</b>
+        <p>
+          The form is very easy to navigate using the touch screen but when it
+          comes to navigating only with the keyboard, it presents an
+          accessibility issue for users. For example, there is no way to attach
+          files using only the keyboard.
+        </p>
+        <p>
+          The save button contrast, when selected by keyboard navigation, is
+          very low compared with the contrast of the rest of the form.
+          <br />
+          This could potentially lead to user uncertainty about their actions
+          and their current location in the form. In any moment, the user should
+          be aware of what is happening and where they are in the navigation
+          tree.
+        </p>
+      </div>
+      <div className="tab-navigation-container-desktop">
         <div className="tab-navigation-wrapper">
           <span className="bold">Suggestion</span>
           <br />
