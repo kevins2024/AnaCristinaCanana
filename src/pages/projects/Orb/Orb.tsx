@@ -1,3 +1,4 @@
+import { Carousel } from "react-responsive-carousel";
 import ComponentWrapper from "../../../components/ComponentWrapper";
 import Heading from "../../../components/Heading";
 import ProjectContent, {
@@ -13,6 +14,7 @@ import SpacerVertical from "../../../components/SpacerVertical";
 import SubHeading from "../../../components/SubHeading";
 import images from "./assets";
 import "./Orb.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Orb() {
   return (
@@ -142,7 +144,7 @@ function Orb() {
           },
         ]}
       />
-      <ul>
+      <ul className="ul-seventy">
         <li>Ability to add stories to the main profile photo</li>
         <li>
           {
@@ -284,10 +286,19 @@ function Orb() {
           }
         </div>
       </div>
-      <br />
+      <SpacerVertical />
+      <div className="orb-low-fidelity-slider">
+        <Carousel showStatus={false} showThumbs={false} infiniteLoop>
+          <img className="orb-low-fidelity-slider-image" src={images.lfp1} />
+          <img className="orb-low-fidelity-slider-image" src={images.lfp2} />
+          <img className="orb-low-fidelity-slider-image" src={images.lfp3} />
+          <img className="orb-low-fidelity-slider-image" src={images.lfp4} />
+          <img className="orb-low-fidelity-slider-image" src={images.lfp5} />
+        </Carousel>
+      </div>
       <div
+        className="orb-low-fidelity-container"
         style={{
-          display: "grid",
           gridTemplateColumns: "19% 19% 19% 19% 19%",
           width: "var(--content-width-full-medium)",
           gap: ".5%",
@@ -333,7 +344,7 @@ function Orb() {
       <div className="project-content-parent">
         <div className="project-content-title">Findings:</div>
       </div>
-      <ul>
+      <ul className="ul-seventy">
         <li>
           The welcome message takes too much space and distracts the user flow.
         </li>
