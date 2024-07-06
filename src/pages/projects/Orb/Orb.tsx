@@ -9,8 +9,10 @@ import {
   ProjectContentLayoutThreeColumns,
 } from "../../../components/ProjectContentLayouts";
 import ProjectFacts from "../../../components/ProjectFacts";
+import SpacerVertical from "../../../components/SpacerVertical";
 import SubHeading from "../../../components/SubHeading";
 import images from "./assets";
+import "./Orb.css";
 
 function Orb() {
   return (
@@ -85,15 +87,9 @@ function Orb() {
       />
       <ProjectContentLayoutThreeColumns
         left={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="orb-column-layout">
             <div className="project-content-title">The Problem</div>
-            <div style={{ textAlign: "center" }}>
+            <div className="orb-column-text">
               {
                 "There is a gap between users and Media Creators. The gap is expanding as individual social media platforms become more competitive with algorithms favoring viral and trending content."
               }
@@ -101,15 +97,9 @@ function Orb() {
           </div>
         }
         center={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="orb-column-layout">
             <div className="project-content-title">The Goal</div>
-            <div style={{ textAlign: "center" }}>
+            <div className="orb-column-text">
               {
                 "Create an app that streamlines the way creative individuals can be discovered by both users and sponsors. This is done by combining all the work of creators across social media platforms into one space and avoiding those algorithms."
               }
@@ -117,15 +107,9 @@ function Orb() {
           </div>
         }
         right={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="orb-column-layout">
             <div className="project-content-title">Target Audience</div>
-            <div style={{ textAlign: "center" }}>
+            <div className="orb-column-text">
               {
                 "Social media creators and users who create unique content or wish to find it."
               }
@@ -133,6 +117,7 @@ function Orb() {
           </div>
         }
       />
+      <SpacerVertical />
       <ProjectContent
         title="Previous Mockups"
         content={[
@@ -187,15 +172,9 @@ function Orb() {
       />
       <ProjectContentLayoutThreeColumns
         left={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="orb-column-layout">
             <div className="project-content-title">IMDb</div>
-            <div style={{ textAlign: "center" }}>
+            <div className="orb-column-text">
               {
                 "An online database of information related to films, television series, podcasts, home videos, video games, and streaming online content."
               }
@@ -210,15 +189,9 @@ function Orb() {
           </div>
         }
         center={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="orb-column-layout">
             <div className="project-content-title">Pinterest</div>
-            <div style={{ textAlign: "center" }}>
+            <div className="orb-column-text">
               {
                 "A visual discovery engine for finding ideas like recipes, home and style inspiration, and more."
               }
@@ -233,15 +206,9 @@ function Orb() {
           </div>
         }
         right={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <div className="orb-column-layout">
             <div className="project-content-title">Zillow</div>
-            <div style={{ textAlign: "center" }}>
+            <div className="orb-column-text">
               {
                 "Our technology platform connects buyers, sellers, and renters with the people and services they need."
               }
