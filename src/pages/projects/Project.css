@@ -1,22 +1,38 @@
 .project-preview-container {
   display: flex;
   flex-direction: column;
-  height: 440px;
-  width: 375px;
-  margin-top: 50px;
+  height: unset;
+  width: fit-content;
+  margin-top: 30px;
 }
 
 .project-preview-image {
-  max-width: 366px;
+  max-width: 100%;
   cursor: pointer;
 }
 
 .project-button {
-  margin-top: auto;
+  margin-top: 20px;
   width: 89px;
   align-self: center;
 }
 
 .project-preview-text {
   text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .project-preview-container {
+    height: 440px;
+    width: 375px;
+    margin-top: 50px;
+  }
+
+  .project-preview-image {
+    max-width: 366px;
+  }
+
+  .project-button {
+    margin-top: auto;
+  }
 }

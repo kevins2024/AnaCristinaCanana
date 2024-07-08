@@ -10,5 +10,7 @@ Ana Cristina is a designer and designed this site. Imagine being a designer but 
 - [ ] Change layout to be responsive
 - [ ] Many todos scattered around the code in in comments
 - [ ] Make a click-to-enlarge image feature
-- [ ] CSS change pointer on hover over clickable images (link, enlarge)
+- [ ] Move images someplace faster than github
+- [x] CSS change pointer on hover over clickable images (link, enlarge)
 - [ ] The deploy script works, but adding `--cname <CNAME>` is likely a better way to go than the file copy currently in use
+- [ ] MyOrb project preview image is not centered within the image itself
