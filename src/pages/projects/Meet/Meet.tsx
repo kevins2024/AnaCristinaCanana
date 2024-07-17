@@ -50,7 +50,7 @@ function Meet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "flex",
@@ -176,12 +176,12 @@ function Meet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       {/* todo I don't know why this needs a wrapper div; taqueria has the same exact title div without wrapper and it works correctly. this one aligns in the center */}
       <div className="project-content-parent">
         <div className="project-content-title">Mockups</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -216,8 +216,8 @@ function Meet() {
           },
         ]}
       />
-      <br />
-      <br />
+      <SpacerVertical />
+      <SpacerVertical />
       <SubHeading>Responsive Web Design</SubHeading>
       <ProjectContent
         title="Paper Wireframe"
@@ -232,11 +232,11 @@ function Meet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Low-fidelity Prototype</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -250,11 +250,11 @@ function Meet() {
         <img style={{ maxWidth: "100%" }} src={images.lfp2} />
         <img style={{ maxWidth: "100%" }} src={images.lfp3} />
       </div>
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Mockups</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -269,7 +269,7 @@ function Meet() {
         <img style={{ maxWidth: "100%" }} src={images.webMockup3} />
         <img style={{ maxWidth: "100%" }} src={images.webMockup4} />
       </div>
-      <br />
+      <SpacerVertical />
       <ProjectContent
         title="Usability Study"
         content={[

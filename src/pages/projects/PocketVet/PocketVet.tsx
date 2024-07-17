@@ -27,7 +27,7 @@ function PocketVet() {
       />
       <SpacerVertical />
       <div className="vet-summary-section">
-        <br />
+        <SpacerVertical />
         <ProjectFacts
           titles={["Project Duration:", "Responsibilities:", "Role:", "Tools:"]}
           values={[
@@ -95,7 +95,7 @@ function PocketVet() {
             <img src={arrowLeft} />
           </div>
           <div className="vet-button-suggestion-textbox">
-            <span className="bold">Note:</span> <br />
+            <span className="bold">Note:</span> <SpacerVertical />
             This button should complement the body of the dialog.
           </div>
           <div className="vet-button-suggestion-image-wrapper">
@@ -123,8 +123,8 @@ function PocketVet() {
           },
         ]}
       />
-      <br />
-      <br />
+      <SpacerVertical />
+      <SpacerVertical />
       <div className="vet-hovering-container">
         <div className="vet-hovering-image-wrapper">
           <img src={images.image3} />
@@ -133,7 +133,7 @@ function PocketVet() {
           <img src={arrowLeft} />
         </div>
         <div className="vet-hovering-textbox">
-          <span className="bold">Suggestion</span> <br />
+          <span className="bold">Suggestion</span> <SpacerVertical />
           The icon for adding cases could be mistaken for a non-occasional
           button. Implementing a hover state and text would help clarify its
           function as an action button.
@@ -192,7 +192,7 @@ function PocketVet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       {/* todo change all fontweight: bold to h3 or smaller
       todo change all br tags to divs with spacing */}
       <div className="tab-navigation-container-mobile">
@@ -207,7 +207,7 @@ function PocketVet() {
         <p>
           The save button contrast, when selected by keyboard navigation, is
           very low compared with the contrast of the rest of the form.
-          <br />
+          <SpacerVertical />
           This could potentially lead to user uncertainty about their actions
           and their current location in the form. In any moment, the user should
           be aware of what is happening and where they are in the navigation
@@ -217,7 +217,7 @@ function PocketVet() {
       <div className="tab-navigation-container-desktop">
         <div className="tab-navigation-wrapper">
           <span className="bold">Suggestion</span>
-          <br />
+          <SpacerVertical />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
@@ -233,10 +233,10 @@ function PocketVet() {
         <img src={arrowLeft} className="tab-navigation-arrow-left" />
         <div className="tab-navigation-textbox">
           <span className="bold">Suggestion</span>
-          <br />
+          <SpacerVertical />
           The save button contrast, when selected by keyboard navigation, is
           very low compared with the contrast of the rest of the form.
-          <br />
+          <SpacerVertical />
           This could potentially lead to user uncertainty about their actions
           and their current location in the form. In any moment, the user should
           be aware of what is happening and where they are in the navigation
@@ -260,7 +260,7 @@ function PocketVet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div className="color-suggestion-container">
         <div className="color-suggestion-left">
           <img src={images.image7} className="color-suggestion-image" />
@@ -282,7 +282,7 @@ function PocketVet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div className="color-suggestion-container">
         <div className="color-suggestion-left">
           <img src={images.image10} className="color-suggestion-image" />

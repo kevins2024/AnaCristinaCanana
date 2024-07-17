@@ -133,7 +133,7 @@ function Orb() {
         left={<img style={{ maxWidth: "100%" }} src={images.previous1} />}
         right={<img style={{ maxWidth: "100%" }} src={images.previous2} />}
       />
-      <br />
+      <SpacerVertical />
       <SubHeading>Define</SubHeading>
       <ProjectContent
         title="Ideation"
@@ -181,7 +181,7 @@ function Orb() {
                 "An online database of information related to films, television series, podcasts, home videos, video games, and streaming online content."
               }
             </div>
-            <br />
+            <SpacerVertical />
             <div>
               <span style={{ fontWeight: "bold" }}>
                 Their unique value proposition{" "}
@@ -198,7 +198,7 @@ function Orb() {
                 "A visual discovery engine for finding ideas like recipes, home and style inspiration, and more."
               }
             </div>
-            <br />
+            <SpacerVertical />
             <div>
               <span style={{ fontWeight: "bold" }}>
                 Their unique value proposition{" "}
@@ -215,7 +215,7 @@ function Orb() {
                 "Our technology platform connects buyers, sellers, and renters with the people and services they need."
               }
             </div>
-            <br />
+            <SpacerVertical />
             <div>
               <span style={{ fontWeight: "bold" }}>
                 Their unique value proposition{" "}
@@ -279,7 +279,7 @@ function Orb() {
           Interactive Low-fidelity Prototype on Xd
         </a>
 
-        <br />
+        <SpacerVertical />
         <div className="project-content-paragraph">
           {
             "After the team analyzed the paper wireframe and chose the design elements they wanted to include, this project started to feel real! I started designing the low-fidelity prototype based on the wireframes with adjustments suggested by the team."
@@ -310,12 +310,12 @@ function Orb() {
         <img style={{ maxWidth: "100%" }} src={images.lfp4} />
         <img style={{ maxWidth: "100%" }} src={images.lfp5} />
       </div>
-      <br />
-      <br />
+      <SpacerVertical />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Usability Study</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "flex",
@@ -340,7 +340,7 @@ function Orb() {
           <div style={{ width: "60%" }}>15-30 minutes</div>
         </div>
       </div>
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Findings:</div>
       </div>
@@ -452,7 +452,7 @@ function Orb() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Initial Mockups</div>
       </div>
@@ -469,11 +469,11 @@ function Orb() {
         <img style={{ maxWidth: "100%" }} src={images.oldMockup2} />
         <div></div>
       </div>
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">New Mockups</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -488,7 +488,7 @@ function Orb() {
         <img style={{ maxWidth: "100%" }} src={images.newMockup4} />
       </div>
       <div className="project-content-parent">
-        <br />
+        <SpacerVertical />
         <a href="https://xd.adobe.com/view/420d6c84-a3c9-4591-b7e2-006df704975a-175e/?fullscreen&hints=off">
           Interactive High-fidelity Prototype on Xd
         </a>
@@ -502,7 +502,7 @@ function Orb() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -519,7 +519,7 @@ function Orb() {
         />
         <div></div>
       </div>
-      <br />
+      <SpacerVertical />
       <ProjectContent
         title="Takeaways"
         content={[
