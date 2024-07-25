@@ -1,0 +1,9 @@
+.meet-project-facts-container {
+  width: 80%;
+}
+
+@media screen and (min-width: 720px) {
+  .meet-project-facts-container {
+    width: 40%;
+  }
+}

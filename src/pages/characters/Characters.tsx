@@ -1,5 +1,7 @@
+import SpacerVertical from "../../components/SpacerVertical";
 import "./Characters.css";
-import image1 from "./assets/All characters-2.jpg";
+import image1 from "./assets/All characters-2resized.jpg";
+import image1mobile from "./assets/All characters-2mobile.jpg";
 import image2 from "./assets/Character's section 2.png";
 import image3 from "./assets/Character's section 3.png";
 import image4 from "./assets/Character's section 4.png";
@@ -7,7 +9,8 @@ import image4 from "./assets/Character's section 4.png";
 function Characters() {
   return (
     <div className="content-panel characters-content-layout">
-      <img src={image1} style={{ width: "var(--content-width-full)" }} />
+      <img src={image1} className="characters-banner-image" />
+      <img src={image1mobile} className="characters-banner-image-mobile" />
       <SpacerVertical />
       <div style={{ textAlign: "center" }} className="project-content-parent">
         {
