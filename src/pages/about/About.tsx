@@ -9,15 +9,10 @@ function About() {
       className="content-panel"
       style={{ flexDirection: "column", alignItems: "center" }}
     >
-      <div className="about-top-spacing"></div>
+      <div className="about-spacing"></div>
       <div className="about-layout">
         <div className="about-left">
           <img className="about-me-image" src={image}></img>
-          {/* <div className="about-container">
-          <div className="about-hello">Hello!</div>
-          <div className="about-hola">¡Hola!</div>
-          <div className="about-ola">Olá!</div>
-        </div> */}
         </div>
         <div className="about-middle"></div>
         <div className="about-right">
@@ -53,8 +48,8 @@ function About() {
             </a>
           </div>
         </div>
+        <div className="about-spacing"></div>
       </div>
-      <div className="about-bottom-spacing"></div>
     </div>
   );
 }

@@ -7,7 +7,7 @@
 
 .project-content-title {
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 .project-content-image {
@@ -22,5 +22,8 @@
   max-height: calc(70vh - 88px);
 }
 
-/* .project-content-paragraph {
-} */
+@media screen and (min-width: 720px) {
+  .project-content-title {
+    font-size: 16pt;
+  }
+}

@@ -3,8 +3,11 @@ import Heading from "../../../components/Heading";
 import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
+import ProjectFacts from "../../../components/ProjectFacts";
+import SpacerVertical from "../../../components/SpacerVertical";
 import SubHeading from "../../../components/SubHeading";
 import images from "./assets"; // todo experimental, see if this is better than taqueria approach
+import "./Meet.css";
 
 function Meet() {
   return (
@@ -49,38 +52,17 @@ function Meet() {
           },
         ]}
       />
-      <br />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "40%",
-        }}
-      >
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Project Duration:
-          </div>
-          <div style={{ width: "60%" }}>February to July 2023</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Responsibilities:
-          </div>
-          <div style={{ width: "60%" }}>
-            Plan, design, execute design, user test, and iterate through
-            wireframe, low fidelity, high fidelity, until finally the completed
-            design
-          </div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
-          <div style={{ width: "60%" }}>UX designer, student</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
-          <div style={{ width: "60%" }}>Adobe Xd</div>
-        </div>
+      <SpacerVertical />
+      <div className="meet-project-facts-container">
+        <ProjectFacts
+          titles={["Project Duration:", "Responsibilities:", "Role:", "Tools:"]}
+          values={[
+            "February to July 2023",
+            "Plan, design, execute design, user test, and iterate through wireframe, low fidelity, high fidelity, until finally the completed design",
+            "UX designer, student",
+            "Adobe Xd",
+          ]}
+        />
       </div>
       <ProjectContent
         title="User Research"
@@ -190,12 +172,12 @@ function Meet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       {/* todo I don't know why this needs a wrapper div; taqueria has the same exact title div without wrapper and it works correctly. this one aligns in the center */}
       <div className="project-content-parent">
         <div className="project-content-title">Mockups</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -230,8 +212,8 @@ function Meet() {
           },
         ]}
       />
-      <br />
-      <br />
+      <SpacerVertical />
+      <SpacerVertical />
       <SubHeading>Responsive Web Design</SubHeading>
       <ProjectContent
         title="Paper Wireframe"
@@ -246,11 +228,11 @@ function Meet() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Low-fidelity Prototype</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -264,11 +246,11 @@ function Meet() {
         <img style={{ maxWidth: "100%" }} src={images.lfp2} />
         <img style={{ maxWidth: "100%" }} src={images.lfp3} />
       </div>
-      <br />
+      <SpacerVertical />
       <div className="project-content-parent">
         <div className="project-content-title">Mockups</div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{
           display: "grid",
@@ -283,7 +265,7 @@ function Meet() {
         <img style={{ maxWidth: "100%" }} src={images.webMockup3} />
         <img style={{ maxWidth: "100%" }} src={images.webMockup4} />
       </div>
-      <br />
+      <SpacerVertical />
       <ProjectContent
         title="Usability Study"
         content={[

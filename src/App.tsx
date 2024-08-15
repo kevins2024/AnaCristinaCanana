@@ -12,9 +12,13 @@ import Characters from "./pages/characters/Characters";
 import About from "./pages/about/About";
 import { useLocation } from "react-router-dom";
 import PocketVet from "./pages/projects/PocketVet/PocketVet";
+import { useEffect } from "react";
 
 function App() {
   const location = useLocation();
+  useEffect(() => {
+    document.getElementById("content-wrapper")?.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div className="root-container">

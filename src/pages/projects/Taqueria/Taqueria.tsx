@@ -3,9 +3,11 @@ import Heading from "../../../components/Heading";
 import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
+import ProjectFacts from "../../../components/ProjectFacts";
+import SpacerVertical from "../../../components/SpacerVertical";
 import SubHeading from "../../../components/SubHeading";
-
 import images from "./assets";
+import "./Taqueria.css";
 
 function Taqueria() {
   return (
@@ -49,39 +51,19 @@ function Taqueria() {
           },
         ]}
       />
-      {/* todo make a component */}
-      <br />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "40%",
-        }}
-      >
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Project Duration:
-          </div>
-          <div style={{ width: "60%" }}>February 5th to August 3rd 2022</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>
-            Responsibilities:
-          </div>
-          <div style={{ width: "60%" }}>
-            Plan, design, execute design, user test, and iterate through
-            wireframe, low fidelity, high fidelity, until finally the completed
-            design
-          </div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Role:</div>
-          <div style={{ width: "60%" }}>UX designer, student</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Tools:</div>
-          <div style={{ width: "60%" }}>Figma, Adobe Xd</div>
-        </div>
+      <SpacerVertical />
+      <div className="taqueria-project-facts">
+        <SpacerVertical />
+        <ProjectFacts
+          titles={["Project Duration:", "Responsibilities:", "Role:", "Tools:"]}
+          values={[
+            "February 5th to August 3rd 2022",
+            "Plan, design, execute design, user test, and iterate through wireframe, low fidelity, high fidelity, until finally the completed design",
+            "UX designer, student",
+            "Figma, Adobe Xd",
+          ]}
+        />
+        <SpacerVertical />
       </div>
       <ProjectContent
         title="Primary Research"
@@ -96,7 +78,7 @@ function Taqueria() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       {/* todo make this a component */}
       <img src={images.placeholder01} className="project-content-image-small" />
       <ProjectContent
@@ -167,7 +149,7 @@ function Taqueria() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       {/* todo this may become a grid component */}
       <div
         style={{
@@ -187,7 +169,7 @@ function Taqueria() {
         <img style={{ maxWidth: "100%" }} src={images.wireframe07} />
         <img style={{ maxWidth: "100%" }} src={images.wireframe08} />
       </div>
-      <br />
+      <SpacerVertical />
       <ProjectContent
         title="Low Fidelity Prototype"
         content={[
@@ -206,40 +188,27 @@ function Taqueria() {
         ]}
       />
       {/* todo this is a cool layout, need to make a component for it with more absolute arrow positioning */}
-      <br />
-      <div
-        style={{ display: "flex", width: "var(--content-width-full-medium)" }}
-      >
-        <div
-          style={{
-            width: "22%",
-            fontSize: "10pt",
-            textAlign: "right",
-            paddingTop: "1vh",
-          }}
-        >
+      <SpacerVertical />
+      <div className="taqueria-lfp-detail-container">
+        <div className="taqueria-lfp-detail-text">
           Profile and cart buttons are always easy to locate
         </div>
-        <div style={{ width: "5%", paddingTop: "2%" }}>
+        <div className="taqueria-lfp-detail-left-arrow">
           <img src={images.arrowRightAlt} style={{ width: "100%" }} />
         </div>
-        <img style={{ maxWidth: "36%" }} src={images.mobileHomePage} />
-        <div style={{ width: "5%", alignSelf: "end", paddingBottom: "8%" }}>
+        <img
+          className="taqueria-lfp-detail-image"
+          src={images.mobileHomePage}
+        />
+        <div className="taqueria-lfp-detail-right-arrow">
           <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
         </div>
-        <div
-          style={{
-            width: "22%",
-            alignSelf: "end",
-            paddingBottom: "5%",
-            fontSize: "10pt",
-          }}
-        >
+        <div className="taqueria-lfp-detail-text-two">
           Home page also displays the previous orders and allows customer to add
           it to the cart with a single click or tap.
         </div>
       </div>
-      <br />
+      <SpacerVertical />
       <div
         style={{ width: "var(--content-width-full-medium)" }}
         className="project-content-paragraph"
@@ -249,27 +218,16 @@ function Taqueria() {
         sections for drinks, desserts, and special instructions necessary for
         their meal.
       </div>
-      <br />
-      <div
-        style={{ display: "flex", width: "var(--content-width-full-medium)" }}
-      >
-        <div style={{ minWidth: "22%" }}></div>
-        <div style={{ minWidth: "5%" }}></div>
+      <SpacerVertical />
+      <div className="taqueria-lfp-detail-two-container">
         <img
-          style={{ backgroundColor: "red", width: "36%" }}
+          className="taqueria-lfp-detail-two-image"
           src={images.menuWithReturnShown}
         />
-        <div style={{ minWidth: "5%", alignSelf: "end", paddingBottom: "2%" }}>
+        <div className="taqueria-lfp-detail-two-arrow">
           <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
         </div>
-        <div
-          style={{
-            minWidth: "22%",
-            alignSelf: "end",
-            paddingBottom: "2%",
-            fontSize: "10pt",
-          }}
-        >
+        <div className="taqueria-lfp-detail-two-text">
           The user is also able to exit this page and go back to the menu if
           they want to completely change the meal being ordered.
         </div>
@@ -284,15 +242,15 @@ function Taqueria() {
           { type: ProjectContentType.IMAGE, data: images.usabilityPlaceholder },
         ]}
       />
-      <br />
-      <br />
+      <SpacerVertical />
+      <SpacerVertical />
       <div
         style={{ alignSelf: "flex-start", marginLeft: "10%" }}
         className="project-content-title"
       >
         Mockups
       </div>
-      <br />
+      <SpacerVertical />
       <div // copy paste from above grid
         style={{
           display: "grid",
@@ -325,7 +283,7 @@ function Taqueria() {
           },
         ]}
       />
-      <br />
+      <SpacerVertical />
       <SubHeading>Responsive Web Design</SubHeading>
       <ProjectContent
         title="Refining the Design"

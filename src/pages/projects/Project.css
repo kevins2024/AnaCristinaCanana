@@ -1,18 +1,18 @@
 .project-preview-container {
   display: flex;
   flex-direction: column;
-  height: 440px;
-  width: 375px;
-  margin-top: 50px;
+  height: unset;
+  width: fit-content;
+  margin-top: 30px;
 }
 
 .project-preview-image {
-  max-width: 366px;
+  max-width: 100%;
   cursor: pointer;
 }
 
 .project-button {
-  margin-top: auto;
+  margin-top: 20px;
   width: 89px;
   align-self: center;
 }
@@ -21,46 +21,18 @@
   text-align: center;
 }
 
-.status-icon-container {
-  width: 35vw;
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (min-width: 720px) {
+  .project-preview-container {
+    height: 440px;
+    width: 375px;
+    margin-top: 50px;
+  }
 
-.status-icon-item {
-  width: 80%;
-  margin: 2% auto 2% auto;
-}
+  .project-preview-image {
+    max-width: 366px;
+  }
 
-.status-icon-wrapper {
-  border: solid 1px;
-  display: flex;
-  padding: 1% 0 1% 5%;
-}
-
-.pocketvet-icons {
-  height: 18px;
-  align-self: center;
-  margin-right: 18px;
-}
-
-.tab-navigation-container {
-  width: var(--content-width-full);
-  display: flex;
-}
-
-.color-suggestion-container {
-  width: var(--content-width-full);
-  display: flex;
-  justify-content: space-between;
-}
-
-.color-suggestion-left {
-  width: 47%;
-  display: flex;
-  flex-direction: column;
-}
-
-.color-suggestion-right {
-  width: 47%;
+  .project-button {
+    margin-top: auto;
+  }
 }

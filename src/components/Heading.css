@@ -1,0 +1,10 @@
+.shared-heading {
+  max-width: 80%;
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .shared-heading {
+    max-width: 50%;
+  }
+}

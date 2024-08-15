@@ -21,10 +21,13 @@
   justify-content: center;
   background-color: white;
   margin-top: 88px;
-  height: 100%;
   overflow: auto;
+  z-index: 1;
 }
 
 .flex-spacer {
   flex-shrink: 0;
+}
+
+@media screen and (min-width: 720px) {
 }

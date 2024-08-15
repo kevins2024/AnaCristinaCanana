@@ -6,7 +6,7 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 26pt;
+  font-size: 24pt;
   font-weight: bold;
   letter-spacing: 1.5px;
 }
@@ -19,6 +19,7 @@ h2 {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
   margin: auto;
   background-image: url(/src/assets/background-main.png);
   background-size: cover;
@@ -33,4 +34,14 @@ h2 {
   cursor: pointer;
   padding: 0px 14px 0px 14px;
   white-space: nowrap;
+}
+
+@media screen and (min-width: 720px) {
+  h1 {
+    font-size: 26pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
 }

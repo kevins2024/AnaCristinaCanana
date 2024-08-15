@@ -17,25 +17,65 @@
 }
 
 .landing-content-name {
-  font: bold 41pt "Yu Gothic";
+  font: bold 19pt "Yu Gothic";
   letter-spacing: 2px;
-  margin-bottom: -10px;
 }
 
-.landing-content-profession {
-  display: flex;
-  width: 100%;
-  align-items: center;
+.profession {
+  display: none;
 }
 
-.landing-content-profession-left-box {
-  padding-right: 16px;
-  font-size: 9pt;
+.profession-left-box {
+  font-size: 8pt;
   text-decoration: line-through;
   color: var(--text-color-light-minordisable);
 }
 
-.landing-content-profession-center-box {
-  font-size: 16pt;
+.profession-center-box {
+  font-size: 13pt;
   color: var(--text-color-light-minorhighlight);
+}
+
+.profession-mobile {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+@media screen and (min-width: 720px) {
+  .profession-mobile {
+    visibility: hidden;
+  }
+
+  .profession {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .landing-content-name {
+    font-size: 41pt;
+    letter-spacing: 2px;
+    margin-bottom: -10px;
+  }
+
+  .profession-left-container {
+    flex: 1;
+    min-width: "30%";
+  }
+
+  .profession-floater {
+    float: right;
+  }
+
+  .profession-left-box {
+    font-size: 9pt;
+    padding-right: 16px;
+  }
+
+  .profession-center-box {
+    font-size: 16pt;
+  }
 }
