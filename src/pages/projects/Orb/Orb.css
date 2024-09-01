@@ -62,9 +62,23 @@
   opacity: 0.4 !important;
 }
 
+/* todo check mobile style */
+.orb-image-title {
+  font-weight: unset;
+  margin-bottom: 9px;
+}
+
+.unique-value-proposition {
+  text-align: center;
+}
+
 @media screen and (min-width: 720px) {
   .orb-column-layout {
     align-items: center;
+    background-color: #eee;
+    border-radius: 18px;
+    padding: 20px;
+    height: 100%;
   }
 
   .orb-column-layout .project-content-title {
@@ -76,7 +90,7 @@
   }
 
   .ul-seventy {
-    max-width: 100%;
+    max-width: var(--content-width-full-medium);
     margin: 0;
   }
 
@@ -86,5 +100,10 @@
 
   .orb-low-fidelity-slider {
     display: none;
+  }
+
+  .section-heading {
+    font-weight: bold;
+    font-size: 24px;
   }
 }

@@ -6,7 +6,7 @@ import ProjectContent, {
 import ProjectFacts from "../../../components/ProjectFacts";
 import SpacerVertical from "../../../components/SpacerVertical";
 import SubHeading from "../../../components/SubHeading";
-import images from "./assets"; // todo experimental, see if this is better than taqueria approach
+import images from "./assets";
 import "./Meet.css";
 
 function Meet() {
@@ -173,7 +173,6 @@ function Meet() {
         ]}
       />
       <SpacerVertical />
-      {/* todo I don't know why this needs a wrapper div; taqueria has the same exact title div without wrapper and it works correctly. this one aligns in the center */}
       <div className="project-content-parent">
         <div className="project-content-title">Mockups</div>
       </div>

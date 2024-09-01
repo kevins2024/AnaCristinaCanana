@@ -50,7 +50,6 @@ function TopBar() {
     <>
       <div className="top-bar">
         <img onClick={goHome} src={acLogo} className="top-bar-icon" />
-        {/* todo worth it to programmatically remove one of these instead of css? */}
         <div className="top-bar-button-box">
           {buttons.map((button) => (
             <NavLink

@@ -12,7 +12,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 .root-container {
@@ -30,10 +30,22 @@ h2 {
   color: white;
   border-radius: 8px;
   border: none;
-  height: 37px;
   cursor: pointer;
-  padding: 0px 14px 0px 14px;
+  padding: 12px 14px;
   white-space: nowrap;
+}
+
+.blue-link {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #06c;
+}
+
+.material-symbols-outlined {
+  font-size: 14pt;
+  margin-left: 5px;
+  vertical-align: middle;
+  margin-bottom: 3px;
 }
 
 @media screen and (min-width: 720px) {
@@ -42,6 +54,7 @@ h2 {
   }
 
   h2 {
-    font-size: 18pt;
+    font-size: 16pt;
+    font-weight: unset;
   }
 }
