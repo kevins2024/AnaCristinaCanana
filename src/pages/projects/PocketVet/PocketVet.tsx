@@ -13,6 +13,7 @@ import error from "./assets/warning-circle-svgrepo-com.svg";
 import "./PocketVet.css";
 import ProjectFacts from "../../../components/ProjectFacts.tsx";
 import SpacerVertical from "../../../components/SpacerVertical.tsx";
+import PageBottom from "../../../components/PageBottom.tsx";
 
 function PocketVet() {
   return (
@@ -292,8 +293,11 @@ function PocketVet() {
           <img src={images.image11} className="color-suggestion-image" />
         </div>
       </div>
-      {/* todo make a global class for bottom of page */}
-      <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
+      <PageBottom
+        heightRelativeToViewport={30}
+        buttonText="Back to Projects"
+        buttonUrl="/projects"
+      />
     </div>
   );
 }

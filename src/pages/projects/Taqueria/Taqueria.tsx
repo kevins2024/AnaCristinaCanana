@@ -1,5 +1,6 @@
 import ComponentWrapper from "../../../components/ComponentWrapper";
 import Heading from "../../../components/Heading";
+import PageBottom from "../../../components/PageBottom";
 import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
@@ -407,8 +408,11 @@ function Taqueria() {
           },
         ]}
       />
-
-      <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
+      <PageBottom
+        heightRelativeToViewport={30}
+        buttonText="Back to Projects"
+        buttonUrl="/projects"
+      />
     </div>
   );
 }
