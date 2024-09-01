@@ -1,0 +1,27 @@
+.page-bottom-content {
+  width: var(--content-width-full);
+}
+
+.page-bottom-button {
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.page-bottom-button:hover {
+  text-decoration: underline;
+}
+
+.page-bottom-button-inner {
+  display: flex;
+  align-items: center;
+}
+
+.page-bottom-button-inner img {
+  height: 22px;
+  width: 22px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 720px) {
+}

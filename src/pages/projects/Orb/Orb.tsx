@@ -15,6 +15,7 @@ import SubHeading from "../../../components/SubHeading";
 import images from "./assets";
 import "./Orb.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import PageBottom from "../../../components/PageBottom";
 
 function Orb() {
   return (
@@ -313,6 +314,7 @@ function Orb() {
       <SpacerVertical />
       <a
         className="blue-link"
+        target="_blank"
         href="https://xd.adobe.com/view/e33496bf-38c5-4514-9fa5-8efd2a0d8feb-b667/"
       >
         View the Interactive Low-fidelity Prototype on Adobe Xd
@@ -508,6 +510,7 @@ function Orb() {
         <a
           style={{ textAlign: "center" }}
           className="blue-link"
+          target="_blank"
           href="https://xd.adobe.com/view/420d6c84-a3c9-4591-b7e2-006df704975a-175e/?fullscreen&hints=off"
         >
           View the Interactive High-fidelity Prototype on Adobe Xd
@@ -550,10 +553,11 @@ function Orb() {
           },
         ]}
       />
-      <div style={{ minHeight: "40vh", visibility: "hidden" }}>
-        Hidden but allows some space at the bottom of the page for easier
-        scrolling.
-      </div>
+      <PageBottom
+        heightRelativeToViewport={30}
+        buttonText="Back to Projects"
+        buttonUrl="/projects"
+      />
     </div>
   );
 }
