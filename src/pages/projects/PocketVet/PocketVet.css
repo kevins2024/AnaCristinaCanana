@@ -251,6 +251,7 @@
   .tab-navigation-arrow-right {
     width: 5%;
     margin-top: 13%;
+    transform: rotate(180deg);
   }
 
   .tab-navigation-image {

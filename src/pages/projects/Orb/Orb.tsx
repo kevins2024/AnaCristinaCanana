@@ -56,10 +56,10 @@ function Orb() {
         left={<img style={{ maxWidth: "100%" }} src={images.mobileHome} />}
         right={
           <div
+            className="orb-width-adjust"
             style={{
               display: "flex",
               flexDirection: "column",
-              width: "var(--content-width-full-medium)",
             }}
           >
             <ProjectFacts
@@ -527,14 +527,7 @@ function Orb() {
         ]}
       />
       <SpacerVertical />
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "17.5% 28% 28% 17.5%",
-          width: "var(--content-width-full-medium)",
-          gap: "3%",
-        }}
-      >
+      <div className="orb-logo-grid">
         <div></div>
         <img style={{ maxWidth: "100%" }} src={images.oldLogo} />
         <img

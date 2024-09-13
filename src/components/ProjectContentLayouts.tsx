@@ -18,8 +18,10 @@ function ProjectContentLayoutThreeColumns(props: ThreeColProps) {
     <>
       <SpacerVertical />
       <div className="pcl-outer-flex">
-        <div className="pcl-three-columns">{props.left}</div>
-        <div className="pcl-three-columns">{props.center}</div>
+        <div className="pcl-three-columns pcl-bottom-spacer">{props.left}</div>
+        <div className="pcl-three-columns pcl-bottom-spacer">
+          {props.center}
+        </div>
         <div className="pcl-three-columns">{props.right}</div>
       </div>
     </>

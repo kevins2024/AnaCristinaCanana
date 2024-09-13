@@ -4,8 +4,6 @@ import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
 import images from "./assets/index.ts";
-import arrowLeft from "../Taqueria/assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
-import arrowRight from "../Taqueria/assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import success from "./assets/check-circle-svgrepo-com.svg";
 import warning from "./assets/warning-svgrepo-com.svg";
 import info from "./assets/info-svgrepo-com.svg";
@@ -14,6 +12,7 @@ import "./PocketVet.css";
 import ProjectFacts from "../../../components/ProjectFacts.tsx";
 import SpacerVertical from "../../../components/SpacerVertical.tsx";
 import PageBottom from "../../../components/PageBottom.tsx";
+import arrowIcon from "../../../assets/arrow-left.svg";
 
 function PocketVet() {
   return (
@@ -92,8 +91,7 @@ function PocketVet() {
             <img src={images.image1} />
           </div>
           <div className="vet-button-suggestion-arrow-container">
-            {/* todo replace the arrow with one with rounded edges, soften color a little, and make it app wide */}
-            <img src={arrowLeft} />
+            <img src={arrowIcon} />
           </div>
           <div className="vet-button-suggestion-textbox">
             <span className="bold">Note:</span> <SpacerVertical />
@@ -131,7 +129,7 @@ function PocketVet() {
           <img src={images.image3} />
         </div>
         <div className="vet-hovering-arrow-container">
-          <img src={arrowLeft} />
+          <img src={arrowIcon} />
         </div>
         <div className="vet-hovering-textbox">
           <span className="bold">Suggestion</span> <SpacerVertical />
@@ -225,13 +223,13 @@ function PocketVet() {
           files using only the keyboard.
         </div>
         {/* todo move arrow asset files */}
-        <img className="tab-navigation-arrow-right" src={arrowRight} />
+        <img className="tab-navigation-arrow-right" src={arrowIcon} />
         <img
           className="tab-navigation-image"
           src={images.image6}
           style={{ width: "34%", height: "auto", objectFit: "contain" }}
         />
-        <img src={arrowLeft} className="tab-navigation-arrow-left" />
+        <img src={arrowIcon} className="tab-navigation-arrow-left" />
         <div className="tab-navigation-textbox">
           <span className="bold">Suggestion</span>
           <SpacerVertical />

@@ -195,14 +195,14 @@ function Taqueria() {
           Profile and cart buttons are always easy to locate
         </div>
         <div className="taqueria-lfp-detail-left-arrow">
-          <img src={images.arrowRightAlt} style={{ width: "100%" }} />
+          <img src={images.arrowDefaultLeft} style={{ width: "100%" }} />
         </div>
         <img
           className="taqueria-lfp-detail-image"
           src={images.mobileHomePage}
         />
         <div className="taqueria-lfp-detail-right-arrow">
-          <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
+          <img src={images.arrowDefaultLeft} style={{ width: "100%" }} />
         </div>
         <div className="taqueria-lfp-detail-text-two">
           Home page also displays the previous orders and allows customer to add
@@ -226,7 +226,7 @@ function Taqueria() {
           src={images.menuWithReturnShown}
         />
         <div className="taqueria-lfp-detail-two-arrow">
-          <img src={images.arrowLeftAlt} style={{ width: "100%" }} />
+          <img src={images.arrowDefaultLeft} style={{ width: "100%" }} />
         </div>
         <div className="taqueria-lfp-detail-two-text">
           The user is also able to exit this page and go back to the menu if

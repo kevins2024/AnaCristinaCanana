@@ -5,6 +5,7 @@ import image1mobile from "./assets/All characters-2mobile.jpg";
 import image2 from "./assets/Character's section 2.png";
 import image3 from "./assets/Character's section 3.png";
 import image4 from "./assets/Character's section 4.png";
+import PageBottom from "../../components/PageBottom";
 
 function Characters() {
   return (
@@ -35,8 +36,7 @@ function Characters() {
           </div>
         </div>
       </div>
-      <SpacerVertical />
-      <div style={{ minHeight: "20vh", visibility: "hidden" }}>hidden</div>
+      <PageBottom heightRelativeToViewport={20} />
     </div>
   );
 }
