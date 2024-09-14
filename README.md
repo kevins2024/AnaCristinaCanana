@@ -19,11 +19,11 @@ Ana Cristina is a designer and designed this site. Imagine being a designer but 
 ---
 
 - [x] Right side margins aren't straight
-- [ ] Mobile subheading is wonky
+- [x] Mobile subheading is wonky
 - [x] Add 'Open in New' icon to links to prototypes; make them new tabs
 - [x] Resize Orb HF-prototype images to be the same
 - [x] Button at bottom of each project that goes back to the projects
-- [ ] Orb mobile - HFP before and after are broken; redo competitive audit and usability study
+- [x] Orb mobile - HFP before and after are broken; redo competitive audit and usability study
 - [ ] Orb mobile - add more carousels
-- [ ] Orb mobile - logo redesigned should be bigger
-- [ ] all mobile - all title headers, summaries, and section titles need adjusted
+- [x] Orb mobile - logo redesigned should be bigger
+- [x] all mobile - all title headers, summaries, and section titles need adjusted
