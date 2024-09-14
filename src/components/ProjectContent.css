@@ -14,6 +14,7 @@
   align-self: center;
   max-width: var(--content-width-full-medium);
   max-height: calc(80vh - 88px);
+  padding-top: 5px;
 }
 
 .project-content-image-small {
@@ -25,5 +26,9 @@
 @media screen and (min-width: 720px) {
   .project-content-title {
     font-size: 16pt;
+  }
+
+  .project-content-paragraph {
+    text-align: justify;
   }
 }

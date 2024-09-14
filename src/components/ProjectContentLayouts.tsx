@@ -3,7 +3,6 @@ import SpacerVertical from "./SpacerVertical";
 
 function ProjectContentLayoutOneTwo(props: LeftRightProps) {
   return (
-    // Since this is a layout component I'm going to put the styling here
     <>
       <SpacerVertical />
       <div className="pcl-outer-flex">
@@ -15,13 +14,14 @@ function ProjectContentLayoutOneTwo(props: LeftRightProps) {
 }
 
 function ProjectContentLayoutThreeColumns(props: ThreeColProps) {
-  // todo copy/paste warning! this need refactored
   return (
     <>
       <SpacerVertical />
       <div className="pcl-outer-flex">
-        <div className="pcl-three-columns">{props.left}</div>
-        <div className="pcl-three-columns">{props.center}</div>
+        <div className="pcl-three-columns pcl-bottom-spacer">{props.left}</div>
+        <div className="pcl-three-columns pcl-bottom-spacer">
+          {props.center}
+        </div>
         <div className="pcl-three-columns">{props.right}</div>
       </div>
     </>
@@ -30,7 +30,6 @@ function ProjectContentLayoutThreeColumns(props: ThreeColProps) {
 
 function ProjectContentLayoutOneOne(props: LeftRightProps) {
   return (
-    // Since this is a layout component I'm going to put the styling here
     <>
       <SpacerVertical />
       <div className="pcl-outer-flex pcl-outer-flex-space-around">

@@ -1,6 +1,5 @@
 import "./Heading.css";
 
-// todo where should this live?
 function ToTitleCase(inText: string): string {
   const lowerCaseWords = [
     "a",

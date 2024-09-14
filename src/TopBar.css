@@ -34,7 +34,7 @@
   border-bottom: 3px solid var(--text-color-light-primary);
 }
 
-/* todo turn icons into buttons */
+/* todo turn icons into buttons for screen reader accessibility */
 .top-bar-hamburger-icon {
   padding-right: 15px;
   cursor: pointer;

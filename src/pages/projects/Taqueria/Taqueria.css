@@ -81,6 +81,10 @@
     padding-top: 2%;
   }
 
+  .taqueria-lfp-detail-left-arrow > img:nth-child(1) {
+    transform: rotate(180deg);
+  }
+
   .taqueria-lfp-detail-image {
     max-width: 36%;
   }
@@ -112,7 +116,7 @@
   }
 
   .taqueria-lfp-detail-two-arrow {
-    min-width: 5%;
+    width: 5%;
     align-self: end;
     padding-bottom: 2%;
     display: unset;

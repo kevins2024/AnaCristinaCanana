@@ -80,7 +80,6 @@
   justify-content: space-around;
   align-items: center;
   width: var(--content-width-full);
-  margin-top: 3vh;
 }
 
 .vet-status-image {
@@ -227,7 +226,6 @@
     justify-content: space-around;
     align-items: center;
     width: var(--content-width-full);
-    margin-top: 3vh;
   }
 
   .status-icon-container {
@@ -251,6 +249,7 @@
   .tab-navigation-arrow-right {
     width: 5%;
     margin-top: 13%;
+    transform: rotate(180deg);
   }
 
   .tab-navigation-image {

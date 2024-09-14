@@ -15,8 +15,7 @@ import wireframe07 from "./paper_wireframe07.jpg";
 import wireframe08 from "./paper_wireframe08.jpg";
 import lowFidelityProto from "./lowFidelityPrototype.jpg";
 import mobileHomePage from "./16homeMobile.jpg";
-import arrowRightAlt from "./arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
-import arrowLeftAlt from "./arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
+import arrowDefaultLeft from "../../../../assets/arrow-left.svg";
 import menuWithReturnShown from "./17_menu.png";
 import usabilityPlaceholder from "./placeholderUsabilityStudy.png";
 import mockup1 from "./mockup1.jpg";
@@ -54,8 +53,7 @@ const images = {
   wireframe08: wireframe08,
   lowFidelityProto: lowFidelityProto,
   mobileHomePage: mobileHomePage,
-  arrowRightAlt: arrowRightAlt,
-  arrowLeftAlt: arrowLeftAlt,
+  arrowDefaultLeft: arrowDefaultLeft,
   menuWithReturnShown: menuWithReturnShown,
   usabilityPlaceholder: usabilityPlaceholder,
   mockup1: mockup1,

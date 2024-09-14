@@ -4,8 +4,6 @@ import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
 import images from "./assets/index.ts";
-import arrowLeft from "../Taqueria/assets/arrow_left_alt_FILL0_wght400_GRAD0_opsz24.svg";
-import arrowRight from "../Taqueria/assets/arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg";
 import success from "./assets/check-circle-svgrepo-com.svg";
 import warning from "./assets/warning-svgrepo-com.svg";
 import info from "./assets/info-svgrepo-com.svg";
@@ -13,6 +11,8 @@ import error from "./assets/warning-circle-svgrepo-com.svg";
 import "./PocketVet.css";
 import ProjectFacts from "../../../components/ProjectFacts.tsx";
 import SpacerVertical from "../../../components/SpacerVertical.tsx";
+import PageBottom from "../../../components/PageBottom.tsx";
+import arrowIcon from "../../../assets/arrow-left.svg";
 
 function PocketVet() {
   return (
@@ -25,7 +25,6 @@ function PocketVet() {
           </Heading>
         }
       />
-      <SpacerVertical />
       <div className="vet-summary-section">
         <SpacerVertical />
         <ProjectFacts
@@ -38,7 +37,6 @@ function PocketVet() {
           ]}
         />
       </div>
-      <SpacerVertical />
       <ProjectContent
         content={[
           {
@@ -47,7 +45,6 @@ function PocketVet() {
               veterinarians in requesting consultations from specialist
               veterinarians when encountering complex cases.`,
           },
-
           {
             type: ProjectContentType.PARAGRAPH,
             data: `I was brought onto the team to review the app and provide
@@ -56,7 +53,6 @@ function PocketVet() {
               Accessibility Guidelines (WCAG). What follows are my findings
               and recommendations.`,
           },
-
           {
             type: ProjectContentType.PARAGRAPH,
             data: `Accessibility modifications not only provide individuals with
@@ -66,7 +62,6 @@ function PocketVet() {
           },
         ]}
       />
-      <SpacerVertical />
       <ProjectContent
         title="Buttons Purposes"
         content={[
@@ -81,6 +76,7 @@ function PocketVet() {
           },
         ]}
       />
+      <SpacerVertical />
       <div className="pocket-vet-button-suggestion-desktop-wrapper">
         <div className="vet-button-suggestion-header">
           <b>Before</b>
@@ -91,8 +87,7 @@ function PocketVet() {
             <img src={images.image1} />
           </div>
           <div className="vet-button-suggestion-arrow-container">
-            {/* todo replace the arrow with one with rounded edges, soften color a little, and make it app wide */}
-            <img src={arrowLeft} />
+            <img src={arrowIcon} />
           </div>
           <div className="vet-button-suggestion-textbox">
             <span className="bold">Note:</span> <SpacerVertical />
@@ -124,16 +119,16 @@ function PocketVet() {
         ]}
       />
       <SpacerVertical />
-      <SpacerVertical />
       <div className="vet-hovering-container">
         <div className="vet-hovering-image-wrapper">
           <img src={images.image3} />
         </div>
         <div className="vet-hovering-arrow-container">
-          <img src={arrowLeft} />
+          <img src={arrowIcon} />
         </div>
         <div className="vet-hovering-textbox">
-          <span className="bold">Suggestion</span> <SpacerVertical />
+          <span className="bold">Suggestion</span>
+          <br />
           The icon for adding cases could be mistaken for a non-occasional
           button. Implementing a hover state and text would help clarify its
           function as an action button.
@@ -197,8 +192,10 @@ function PocketVet() {
       todo change all br tags to divs with spacing */}
       <div className="tab-navigation-container-mobile">
         <img className="tab-navigation-image" src={images.image6} />
-        <b>Suggestions:</b>
+        <SpacerVertical />
         <p>
+          <b>Suggestions:</b>
+          <br />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
@@ -217,23 +214,23 @@ function PocketVet() {
       <div className="tab-navigation-container-desktop">
         <div className="tab-navigation-wrapper">
           <span className="bold">Suggestion</span>
-          <SpacerVertical />
+          <br />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
           files using only the keyboard.
         </div>
         {/* todo move arrow asset files */}
-        <img className="tab-navigation-arrow-right" src={arrowRight} />
+        <img className="tab-navigation-arrow-right" src={arrowIcon} />
         <img
           className="tab-navigation-image"
           src={images.image6}
           style={{ width: "34%", height: "auto", objectFit: "contain" }}
         />
-        <img src={arrowLeft} className="tab-navigation-arrow-left" />
+        <img src={arrowIcon} className="tab-navigation-arrow-left" />
         <div className="tab-navigation-textbox">
           <span className="bold">Suggestion</span>
-          <SpacerVertical />
+          <br />
           The save button contrast, when selected by keyboard navigation, is
           very low compared with the contrast of the rest of the form.
           <SpacerVertical />
@@ -292,8 +289,11 @@ function PocketVet() {
           <img src={images.image11} className="color-suggestion-image" />
         </div>
       </div>
-      {/* todo make a global class for bottom of page */}
-      <div style={{ minHeight: "40vh", visibility: "hidden" }}>hidden</div>
+      <PageBottom
+        heightRelativeToViewport={30}
+        buttonText="Back to Projects"
+        buttonUrl="/projects"
+      />
     </div>
   );
 }

@@ -1,3 +1,7 @@
+.orb-width-adjust {
+  width: var(--content-width-full);
+}
+
 .orb-column-layout {
   display: flex;
   flex-direction: column;
@@ -25,6 +29,10 @@
   display: block;
   width: 68%;
   margin-bottom: 45px;
+}
+
+.orb-clients-mockups {
+  grid-template-columns: 0% 45.5% 45.5% 0%;
 }
 
 .carousel .slide img {
@@ -62,9 +70,64 @@
   opacity: 0.4 !important;
 }
 
+/* todo check mobile style */
+.orb-image-title {
+  font-weight: unset;
+  margin-bottom: 9px;
+}
+
+.unique-value-proposition {
+  text-align: center;
+}
+
+.orb-column-layout {
+  align-items: center;
+  background-color: #eee;
+  border-radius: 18px;
+  padding: 16px;
+  height: 100%;
+}
+
+.orb-logo-grid {
+  display: grid;
+  grid-template-columns: 0% 44% 44% 0%;
+  width: var(--content-width-full-medium);
+  gap: 4%;
+}
+
+.orb-usabilty-study-wrapper {
+  width: var(--content-width-full-medium);
+}
+
+.orb-desktop-only {
+  display: none;
+  max-height: 0px;
+}
+
+.orb-mobile-only.orb-mobile-usability-wrapper {
+  max-height: unset;
+  display: flex;
+  flex-direction: column;
+  width: var(--content-width-full);
+  align-items: center;
+}
+
+.orb-image-title.orb-mobile-only {
+  text-align: center;
+}
+
+.orb-usability-after-images {
+  max-width: 80%;
+  margin-bottom: 3vh;
+}
+
 @media screen and (min-width: 720px) {
+  .orb-width-adjust {
+    width: var(--content-width-full-medium);
+  }
+
   .orb-column-layout {
-    align-items: center;
+    padding: 20px;
   }
 
   .orb-column-layout .project-content-title {
@@ -76,7 +139,7 @@
   }
 
   .ul-seventy {
-    max-width: 100%;
+    max-width: var(--content-width-full-medium);
     margin: 0;
   }
 
@@ -86,5 +149,40 @@
 
   .orb-low-fidelity-slider {
     display: none;
+  }
+
+  .orb-logo-grid {
+    grid-template-columns: 17.5% 28% 28% 17.5%;
+    gap: 3%;
+  }
+
+  .orb-usabilty-study-wrapper {
+    width: 40vw;
+  }
+
+  .orb-desktop-only {
+    display: block;
+    max-height: unset;
+  }
+
+  .orb-mobile-only.orb-mobile-usability-wrapper {
+    display: none;
+    max-height: 0px;
+  }
+
+  .orb-usability-mobile-fix {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orb-clients-mockups {
+    grid-template-columns: 17.5% 28% 28% 17.5%;
+  }
+
+  .orb-usability-after-images {
+    max-width: 48%;
+    margin-bottom: 0;
   }
 }

@@ -1,9 +1,8 @@
 import taqueriaImage from "./assets/taqueria-preview.png";
 import meetImage from "./assets/meet-preview.png";
-import orbImage from "./assets/orb-preview.png";
+import orbImage from "./assets/orb-preview2.png";
 import vetImage from "./assets/pocket-vet-preview.png";
 
-// todo still need this?
 export enum ProjectNames {
   MEET = "Meet",
   TAQUERIA = "Taqueria Express",
@@ -19,7 +18,6 @@ export type ProjectData = {
   order: number;
 };
 
-// todo rename this!!
 export const ProjectsData: ProjectData[] = [
   {
     name: ProjectNames.VET,

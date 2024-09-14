@@ -1,12 +1,13 @@
 import ComponentWrapper from "../../../components/ComponentWrapper";
 import Heading from "../../../components/Heading";
+import PageBottom from "../../../components/PageBottom";
 import ProjectContent, {
   ProjectContentType,
 } from "../../../components/ProjectContent";
 import ProjectFacts from "../../../components/ProjectFacts";
 import SpacerVertical from "../../../components/SpacerVertical";
 import SubHeading from "../../../components/SubHeading";
-import images from "./assets"; // todo experimental, see if this is better than taqueria approach
+import images from "./assets";
 import "./Meet.css";
 
 function Meet() {
@@ -173,7 +174,6 @@ function Meet() {
         ]}
       />
       <SpacerVertical />
-      {/* todo I don't know why this needs a wrapper div; taqueria has the same exact title div without wrapper and it works correctly. this one aligns in the center */}
       <div className="project-content-parent">
         <div className="project-content-title">Mockups</div>
       </div>
@@ -214,7 +214,7 @@ function Meet() {
       />
       <SpacerVertical />
       <SpacerVertical />
-      <SubHeading>Responsive Web Design</SubHeading>
+      <h2>RESPONSIVE WEB DESIGN</h2>
       <ProjectContent
         title="Paper Wireframe"
         content={[
@@ -305,9 +305,11 @@ function Meet() {
           },
         ]}
       />
-      <div style={{ minHeight: "40vh", visibility: "hidden" }}>
-        bottom of page padding to make scrolling easier
-      </div>
+      <PageBottom
+        heightRelativeToViewport={30}
+        buttonText="Back to Projects"
+        buttonUrl="/projects"
+      />
     </div>
   );
 }

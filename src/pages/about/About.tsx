@@ -1,3 +1,4 @@
+import PageBottom from "../../components/PageBottom";
 import "./About.css";
 import resume from "./assets/AnaCristina's Resume UX Designer.pdf";
 // import image from "./assets/20230908_142451.jpg";
@@ -48,8 +49,8 @@ function About() {
             </a>
           </div>
         </div>
-        <div className="about-spacing"></div>
       </div>
+      <PageBottom heightRelativeToViewport={20} />
     </div>
   );
 }
