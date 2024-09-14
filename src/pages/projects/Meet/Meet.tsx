@@ -214,7 +214,7 @@ function Meet() {
       />
       <SpacerVertical />
       <SpacerVertical />
-      <SubHeading>Responsive Web Design</SubHeading>
+      <h2>RESPONSIVE WEB DESIGN</h2>
       <ProjectContent
         title="Paper Wireframe"
         content={[

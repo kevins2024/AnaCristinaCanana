@@ -285,7 +285,7 @@ function Taqueria() {
         ]}
       />
       <SpacerVertical />
-      <SubHeading>Responsive Web Design</SubHeading>
+      <SubHeading>RESPONSIVE WEB DESIGN</SubHeading>
       <ProjectContent
         title="Refining the Design"
         content={[

@@ -11,8 +11,10 @@ h1 {
   letter-spacing: 1.5px;
 }
 
-h2 {
-  font-size: 16pt;
+h2,
+.section-heading {
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .root-container {
@@ -51,10 +53,5 @@ h2 {
 @media screen and (min-width: 720px) {
   h1 {
     font-size: 26pt;
-  }
-
-  h2 {
-    font-size: 16pt;
-    font-weight: unset;
   }
 }
