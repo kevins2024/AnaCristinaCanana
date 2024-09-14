@@ -25,7 +25,6 @@ function PocketVet() {
           </Heading>
         }
       />
-      <SpacerVertical />
       <div className="vet-summary-section">
         <SpacerVertical />
         <ProjectFacts
@@ -38,7 +37,6 @@ function PocketVet() {
           ]}
         />
       </div>
-      <SpacerVertical />
       <ProjectContent
         content={[
           {
@@ -47,7 +45,6 @@ function PocketVet() {
               veterinarians in requesting consultations from specialist
               veterinarians when encountering complex cases.`,
           },
-
           {
             type: ProjectContentType.PARAGRAPH,
             data: `I was brought onto the team to review the app and provide
@@ -56,7 +53,6 @@ function PocketVet() {
               Accessibility Guidelines (WCAG). What follows are my findings
               and recommendations.`,
           },
-
           {
             type: ProjectContentType.PARAGRAPH,
             data: `Accessibility modifications not only provide individuals with
@@ -66,7 +62,6 @@ function PocketVet() {
           },
         ]}
       />
-      <SpacerVertical />
       <ProjectContent
         title="Buttons Purposes"
         content={[
@@ -81,6 +76,7 @@ function PocketVet() {
           },
         ]}
       />
+      <SpacerVertical />
       <div className="pocket-vet-button-suggestion-desktop-wrapper">
         <div className="vet-button-suggestion-header">
           <b>Before</b>
@@ -123,7 +119,6 @@ function PocketVet() {
         ]}
       />
       <SpacerVertical />
-      <SpacerVertical />
       <div className="vet-hovering-container">
         <div className="vet-hovering-image-wrapper">
           <img src={images.image3} />
@@ -132,7 +127,8 @@ function PocketVet() {
           <img src={arrowIcon} />
         </div>
         <div className="vet-hovering-textbox">
-          <span className="bold">Suggestion</span> <SpacerVertical />
+          <span className="bold">Suggestion</span>
+          <br />
           The icon for adding cases could be mistaken for a non-occasional
           button. Implementing a hover state and text would help clarify its
           function as an action button.
@@ -196,8 +192,10 @@ function PocketVet() {
       todo change all br tags to divs with spacing */}
       <div className="tab-navigation-container-mobile">
         <img className="tab-navigation-image" src={images.image6} />
-        <b>Suggestions:</b>
+        <SpacerVertical />
         <p>
+          <b>Suggestions:</b>
+          <br />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
@@ -216,7 +214,7 @@ function PocketVet() {
       <div className="tab-navigation-container-desktop">
         <div className="tab-navigation-wrapper">
           <span className="bold">Suggestion</span>
-          <SpacerVertical />
+          <br />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach
@@ -232,7 +230,7 @@ function PocketVet() {
         <img src={arrowIcon} className="tab-navigation-arrow-left" />
         <div className="tab-navigation-textbox">
           <span className="bold">Suggestion</span>
-          <SpacerVertical />
+          <br />
           The save button contrast, when selected by keyboard navigation, is
           very low compared with the contrast of the rest of the form.
           <SpacerVertical />
