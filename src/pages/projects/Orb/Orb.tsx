@@ -313,6 +313,7 @@ function Orb() {
       </div>
       <SpacerVertical />
       <a
+        style={{ textAlign: "center", maxWidth: "80%" }}
         className="blue-link"
         target="_blank"
         href="https://xd.adobe.com/view/e33496bf-38c5-4514-9fa5-8efd2a0d8feb-b667/"
@@ -325,29 +326,16 @@ function Orb() {
         <div className="project-content-title">Usability Study</div>
       </div>
       <SpacerVertical />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "40%",
-        }}
-      >
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Study type:</div>
-          <div style={{ width: "60%" }}>Unmoderated usability study</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Location:</div>
-          <div style={{ width: "60%" }}>US, remote</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Participants:</div>
-          <div style={{ width: "60%" }}>5 participants</div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "6px" }}>
-          <div style={{ fontWeight: "bold", width: "40%" }}>Length:</div>
-          <div style={{ width: "60%" }}>15-30 minutes</div>
-        </div>
+      <div className="orb-usabilty-study-wrapper">
+        <ProjectFacts
+          titles={["Study type:", "Location:", "Participants:", "Length:"]}
+          values={[
+            "Unmoderated usability study",
+            "US, remote",
+            "5 participants",
+            "15-30 minutes",
+          ]}
+        />
       </div>
       <SpacerVertical />
       <div className="project-content-parent">
@@ -390,7 +378,7 @@ function Orb() {
             <div className="project-content-title orb-image-title">
               Before Usability Study
             </div>
-            <img style={{ maxWidth: "48%" }} src={images.lfp1} />
+            <img className="orb-usability-after-images" src={images.lfp1} />
           </div>
         }
         right={
@@ -404,7 +392,10 @@ function Orb() {
             <div className="project-content-title orb-image-title">
               After Usability Study
             </div>
-            <img style={{ maxWidth: "48%" }} src={images.homeAfterStudy} />
+            <img
+              className="orb-usability-after-images"
+              src={images.homeAfterStudy}
+            />
           </div>
         }
       />
@@ -418,47 +409,63 @@ function Orb() {
           },
         ]}
       />
-      <ProjectContentLayoutOneOne
-        left={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <div className="project-content-title orb-image-title">
-              Before Usability Study
+      <div className="orb-desktop-only orb-usability-mobile-fix">
+        <ProjectContentLayoutOneOne
+          left={
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div className="project-content-title orb-image-title">
+                Before Usability Study
+              </div>
             </div>
-          </div>
-        }
-        right={
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <div className="project-content-title orb-image-title">
-              After Usability Study
+          }
+          right={
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <div className="project-content-title orb-image-title">
+                After Usability Study
+              </div>
             </div>
-          </div>
-        }
-      />
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "9% 24% 19% 24% 24%",
-          width: "var(--content-width-full-medium)",
-          gap: ".5%",
-        }}
-      >
-        <div></div>
-        <img style={{ maxWidth: "100%" }} src={images.lfp2} />
-        <div></div>
-        <img style={{ maxWidth: "100%" }} src={images.searchAfterStudy1} />
-        <img style={{ maxWidth: "100%" }} src={images.searchAfterStudy2} />
+          }
+        />
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "9% 24% 19% 24% 24%",
+            width: "var(--content-width-full-medium)",
+            gap: ".5%",
+          }}
+        >
+          <div></div>
+          <img style={{ maxWidth: "100%" }} src={images.lfp2} />
+          <div></div>
+          <img style={{ maxWidth: "100%" }} src={images.searchAfterStudy1} />
+          <img style={{ maxWidth: "100%" }} src={images.searchAfterStudy2} />
+        </div>
+      </div>
+      <div className="orb-mobile-only orb-mobile-usability-wrapper">
+        <SpacerVertical />
+        <div className="project-content-title orb-image-title orb-mobile-only">
+          Before Usability Study
+        </div>
+        <img style={{ maxWidth: "80%" }} src={images.lfp2} />
+        <SpacerVertical />
+        <div className="project-content-title orb-image-title orb-mobile-only">
+          After Usability Study
+        </div>
+        <img style={{ maxWidth: "80%" }} src={images.searchAfterStudy1} />
+        <SpacerVertical sizeRelativeToViewport="1vh" />
+        <img style={{ maxWidth: "80%" }} src={images.searchAfterStudy2} />
       </div>
       <ProjectContent
         title="Mockups"
@@ -475,9 +482,9 @@ function Orb() {
       </div>
       <SpacerVertical sizeRelativeToViewport="1vh" />
       <div
+        className="orb-clients-mockups"
         style={{
           display: "grid",
-          gridTemplateColumns: "17.5% 28% 28% 17.5%",
           width: "var(--content-width-full-medium)",
           gap: "3%",
         }}
@@ -493,8 +500,8 @@ function Orb() {
       </div>
       <SpacerVertical sizeRelativeToViewport="1vh" />
       <div
+        className="orb-low-fidelity-container"
         style={{
-          display: "grid",
           gridTemplateColumns: "23.5% 23.5% 23.5% 23.5%",
           width: "var(--content-width-full-medium)",
           gap: "2%",
@@ -504,6 +511,14 @@ function Orb() {
         <img style={{ maxWidth: "100%" }} src={images.newMockup2} />
         <img style={{ maxWidth: "100%" }} src={images.newMockup3} />
         <img style={{ maxWidth: "100%" }} src={images.newMockup4} />
+      </div>
+      <div className="orb-low-fidelity-slider">
+        <Carousel showStatus={false} showThumbs={false} infiniteLoop>
+          <img style={{ maxWidth: "100%" }} src={images.newMockup1} />
+          <img style={{ maxWidth: "100%" }} src={images.newMockup2} />
+          <img style={{ maxWidth: "100%" }} src={images.newMockup3} />
+          <img style={{ maxWidth: "100%" }} src={images.newMockup4} />
+        </Carousel>
       </div>
       <div className="project-content-parent">
         <SpacerVertical />
