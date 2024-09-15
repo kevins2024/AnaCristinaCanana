@@ -251,7 +251,7 @@ function Taqueria() {
       >
         Mockups
       </div>
-      <SpacerVertical />
+      <SpacerVertical sizeInPixels="5px" />
       <div // copy paste from above grid
         style={{
           display: "grid",
@@ -358,7 +358,7 @@ function Taqueria() {
         ]}
       />
       <ProjectContent
-        title="Usability Study"
+        title="Usability Study Results"
         content={[
           {
             type: ProjectContentType.PARAGRAPH,

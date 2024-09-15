@@ -20,7 +20,7 @@ function About() {
           <div>
             <p>
               {
-                "My name is AnaCristina and I'm an entry-level UX Designer working on building up my UX portfolio. Previously, I have worked as a journalist, educator, and administrative assistant."
+                "My name is AnaCristina and I'm an early career UX Designer working on building up my UX portfolio. Previously, I have worked as a journalist, educator, and administrative assistant."
               }
             </p>
             <p>
