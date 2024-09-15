@@ -12,6 +12,7 @@
 .project-facts-title {
   font-weight: bold;
   width: 100%;
+  padding: 0.2vh 0;
 }
 
 .project-facts-value {
@@ -27,6 +28,7 @@
 
   .project-facts-title {
     width: 40%;
+    padding: unset;
   }
 
   .project-facts-value {

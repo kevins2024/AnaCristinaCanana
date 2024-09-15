@@ -27,3 +27,7 @@ Ana Cristina is a designer and designed this site. Imagine being a designer but 
 - [ ] Orb mobile - add more carousels
 - [x] Orb mobile - logo redesigned should be bigger
 - [x] all mobile - all title headers, summaries, and section titles need adjusted
+- [ ] all mobile - br tags dont work, text blocks are smashed together, add spacing
+- [ ] Orb - the gray boxes are cool but why do they have empty spaces at the bottom?
+- [ ] Taqueria mobile - LFP has two different widths, will have to re-layout the whole thing
+- [ ] Meet mobile - add carousels

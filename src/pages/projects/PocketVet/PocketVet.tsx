@@ -99,10 +99,10 @@ function PocketVet() {
         </div>
       </div>
       <div className="pocket-vet-button-suggestion-mobile-wrapper">
-        <b>Before</b>
+        <b className="mobile-only-spacing-fix">Before</b>
         <img src={images.image1} />
         <p>This button should complement the body of the dialog.</p>
-        <b>Suggested</b>
+        <b className="mobile-only-spacing-fix">Suggested</b>
         <img src={images.image2} />
       </div>
 
@@ -128,7 +128,7 @@ function PocketVet() {
         </div>
         <div className="vet-hovering-textbox">
           <span className="bold">Suggestion</span>
-          <br />
+          <SpacerVertical sizeRelativeToViewport="0.2vh" />
           The icon for adding cases could be mistaken for a non-occasional
           button. Implementing a hover state and text would help clarify its
           function as an action button.
@@ -188,14 +188,13 @@ function PocketVet() {
         ]}
       />
       <SpacerVertical />
-      {/* todo change all fontweight: bold to h3 or smaller
-      todo change all br tags to divs with spacing */}
+      {/* todo change all fontweight: bold to h3 or smaller*/}
       <div className="tab-navigation-container-mobile">
         <img className="tab-navigation-image" src={images.image6} />
         <SpacerVertical />
         <p>
           <b>Suggestions:</b>
-          <br />
+          <SpacerVertical sizeRelativeToViewport="0.2vh" />
           The form is very easy to navigate using the touch screen but when it
           comes to navigating only with the keyboard, it presents an
           accessibility issue for users. For example, there is no way to attach

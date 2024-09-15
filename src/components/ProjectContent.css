@@ -8,6 +8,7 @@
 .project-content-title {
   font-weight: bold;
   font-size: 14pt;
+  padding-bottom: 0.2vh;
 }
 
 .project-content-image {
@@ -26,6 +27,7 @@
 @media screen and (min-width: 720px) {
   .project-content-title {
     font-size: 16pt;
+    padding-bottom: unset;
   }
 
   .project-content-paragraph {

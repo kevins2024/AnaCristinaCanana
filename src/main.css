@@ -50,8 +50,16 @@ h2,
   margin-bottom: 3px;
 }
 
+.mobile-only-spacing-fix {
+  padding-bottom: 0.2vh;
+}
+
 @media screen and (min-width: 720px) {
   h1 {
     font-size: 26pt;
+  }
+
+  .mobile-only-spacing-fix {
+    padding-bottom: 0.2vh;
   }
 }
