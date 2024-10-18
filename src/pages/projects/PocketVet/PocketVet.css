@@ -157,6 +157,15 @@
   .vet-button-suggestion-header {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+  }
+
+  .vet-button-suggestion-header b {
+    width: 37%;
+    text-align: center;
+  }
+
+  .vet-status-image {
     width: 70%;
   }
 
